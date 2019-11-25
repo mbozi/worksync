@@ -1,0 +1,45 @@
+﻿@using worksync
+@model IEnumerable<Poll>
+    @foreach (Poll item in Model)
+    {
+        <tr data-id="@Html.DisplayFor(modelItem => item.ID)">
+            <td class="al">
+                @Html.DisplayFor(modelItem => item.Poller)
+            </td>
+            <td class="al">
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td class="al">
+                @Html.DisplayFor(modelItem => item.PollDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Con)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lab)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LibD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brx)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SNP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UKP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lead)
+            </td>
+        </tr>
+    }
+
+

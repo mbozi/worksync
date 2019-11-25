@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "WebBase.cshtml";
+}
+
+
+@{Html.RenderAction("RenderIntro", "SiteLayout");}
+@{ Html.RenderAction("OpinionPolls", "Database"); }
+
+@section ScriptsEnd {
+    <script src="~/Scripts/Polling/polling.js"></script>
+}
+
+
+
+
+

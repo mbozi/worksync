@@ -1,0 +1,56 @@
+﻿@using worksync
+@model SelectList
+<div class="container">
+    @Html.DropDownList("cbPComps", Model, new {@class = "poll-combo"})
+    <div style="height:28px;overflow-y: scroll;margin-bottom:0px;padding-right:30px;padding-left:30px;padding-top:0px;padding-bottom:0px;scrollbar-base-color:transparent">
+        <table id="poll_table" class="table t_poll" style="margin:0px;">
+            <colgroup>
+                <col span="3">
+                <col span="9" style="width:50px">
+            </colgroup>
+            <tr>
+                <th class="al">
+                    Company
+                </th>
+                <th class="al">
+                    Comment
+                </th>
+                <th class="al">
+                    Date
+                </th>
+                <th>
+                    Con
+                </th>
+                <th>
+                    Lab
+                </th>
+                <th>
+                    LibD
+                </th>
+                <th>
+                    Brx
+                </th>
+                <th>
+                    Grn
+                </th>
+                <th>
+                    SNP
+                </th>
+                <th>
+                    PC
+                </th>
+                <th>
+                    UKIP
+                </th>
+                <th>
+                    Lead
+                </th>
+
+            </tr>
+        </table>
+    </div>
+    <div id="tableHolder" style="height:600px;overflow-y: scroll;margin-bottom:25px;padding-right:30px;padding-left:30px;padding-top:0px;">
+        @*@{ Html.RenderAction("RenderPollsTable", "Database", Model.PollData); }*@
+    </div>
+</div>
+
