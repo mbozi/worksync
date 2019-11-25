@@ -1,7 +1,6 @@
 ﻿@using worksync
-@Model List(of Photo)
+@*@Model List(of Photo)*@
 
 @{ Layout = "~/Views/PhotoBase.cshtml"; }
-
-@{ Html.RenderAction("RenderGallery", "Blog"); }
+@{ Html.RenderAction("RenderGallery", "Article"); }
 

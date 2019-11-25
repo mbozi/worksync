@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "6b7667c0b19efa75")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c6767f1b908fde26")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -797,7 +797,7 @@ namespace Umbraco.Web.PublishedContentModels
 
 	/// <summary>PollTable</summary>
 	[PublishedContentModel("pollTable")]
-	public partial class PollTable : PublishedContentModel
+	public partial class PollTable : PublishedContentModel, ITopNavigationControls
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "pollTable";
@@ -818,6 +818,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<PollTable, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Exclude from Top Navigation: tick if you do not want to include in top menu
+		///</summary>
+		[ImplementPropertyType("excludeFromTopNavigation")]
+		public bool ExcludeFromTopNavigation
+		{
+			get { return Umbraco.Web.PublishedContentModels.TopNavigationControls.GetExcludeFromTopNavigation(this); }
 		}
 	}
 

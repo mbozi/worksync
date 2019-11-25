@@ -32,7 +32,7 @@ Public Class SiteLayoutController
     Private Function GetNavigationModelFromDatabase() As List(Of NavigationListItem)
         Dim homePage As IPublishedContent = CurrentPage.AncestorOrSelf(1).DescendantsOrSelf().Where(Function(x) x.DocumentTypeAlias = "home").FirstOrDefault()
         Dim nav As List(Of NavigationListItem) = New List(Of NavigationListItem) From {
-            New NavigationListItem With {.Link = New NavigationLink With {.Url = homePage.Url, .Text = homePage.Name}}
+            New NavigationListItem With {.Link = New Navigation With {.Url = homePage.Url, .Text = homePage.Name}}
         }
         Dim childlist As List(Of NavigationListItem) = GetChildNavigationList(homePage)
         If Not IsNothing(childlist) Then nav.AddRange(childlist)
@@ -47,7 +47,7 @@ Public Class SiteLayoutController
             listItems = New List(Of NavigationListItem)()
 
             For Each childPage In childPages
-                Dim listItem As NavigationListItem = New NavigationListItem With {.Link = New NavigationLink With {.Url = childPage.Url, .Text = childPage.Name}}
+                Dim listItem As NavigationListItem = New NavigationListItem With {.Link = New Navigation With {.Url = childPage.Url, .Text = childPage.Name}}
                 'listItem.Items = GetChildNavigationList(childPage)
                 listItems.Add(listItem)
             Next

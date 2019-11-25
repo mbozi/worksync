@@ -6,7 +6,7 @@
 <header id="fh5co-header" role="banner">
     <div Class="container">
         <div Class="header-inner">
-            <h1> <i Class="sl-icon-energy"></i><a href="index.html">WORKSYNC</a></h1>
+            <h1> <i Class="sl-icon-energy"></i><a href="\">WORKSYNC</a></h1>
             <nav role="navigation">
                 <ul>
                     @RenderChildItems(Model.PageList)
