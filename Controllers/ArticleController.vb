@@ -9,12 +9,10 @@ Public Class ArticleController
 
     Private Const PARTIAL_VIEW_FOLDER = "~/Views/Partials/Article/"
 
-    Public Function RenderPostList() As ActionResult
+    Public Function RenderMenuPageGallery() As ActionResult
         Dim model As New List(Of ArticlePreview)
         Dim blogpage As IPublishedContent = CurrentPage.AncestorOrSelf(1).DescendantsOrSelf().Where(Function(x) x.DocumentTypeAlias = "menuPage" AndAlso x.Name = CurrentPage.Name).FirstOrDefault
         For Each page As IPublishedContent In blogpage.Children
-            Dim im As String = page.GetPropertyValue("articleImage").URL
-            Dim mediaitem As Object = im
             model.Add(New ArticlePreview With {
                       .ImageURL = page.GetPropertyValue("articleImage").URL,
                       .Introduction = page.GetPropertyValue("articleIntro").ToString,
@@ -22,7 +20,21 @@ Public Class ArticleController
                       .Name = page.GetPropertyValue("title").ToString,
                       .ItemDate = page.GetPropertyValue("articleDate")})
         Next
-        Return PartialView(PARTIAL_VIEW_FOLDER & "_PostList.vbhtml", model)
+        Return PartialView(PARTIAL_VIEW_FOLDER & "_MenuItemsGallery.vbhtml", model)
+    End Function
+
+    Public Function RenderMenuPageList() As ActionResult
+        Dim model As New List(Of ArticlePreview)
+        Dim blogpage As IPublishedContent = CurrentPage.AncestorOrSelf(1).DescendantsOrSelf().Where(Function(x) x.DocumentTypeAlias = "menuPage" AndAlso x.Name = CurrentPage.Name).FirstOrDefault
+        For Each page As IPublishedContent In blogpage.Children
+            model.Add(New ArticlePreview With {
+                      .ImageURL = "",
+                      .Introduction = page.GetPropertyValue("articleIntro").ToString,
+                      .LinkURL = page.UrlName,
+                      .Name = page.GetPropertyValue("title").ToString,
+                      .ItemDate = page.GetPropertyValue("articleDate")})
+        Next
+        Return PartialView(PARTIAL_VIEW_FOLDER & "_MenuItemsList.vbhtml", model)
     End Function
 
     Public Function RenderGallery(FolderName As String) As ActionResult

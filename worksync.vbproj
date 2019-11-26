@@ -1475,7 +1475,6 @@
     <Content Include="Views\Partials\SiteLayout\_Intro.vbhtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\WebBase.cshtml" />
-    <Content Include="Views\Blog.cshtml" />
     <Content Include="Views\Contact.cshtml" />
     <Content Include="Views\Content.cshtml" />
     <Content Include="Views\Services.cshtml" />
@@ -1485,7 +1484,7 @@
     <Content Include="Views\_ViewStart.vbhtml" />
     <Content Include="Views\Shared\_Layout.vbhtml" />
     <Content Include="Views\BlogPost.cshtml" />
-    <Content Include="Views\Partials\Article\_PostList.vbhtml" />
+    <Content Include="Views\Partials\Article\_MenuItemsGallery.vbhtml" />
     <Content Include="Views\Partials\Article\_GridItems.vbhtml" />
     <Content Include="Views\Gallery.cshtml" />
     <Content Include="Views\Polling.cshtml" />
@@ -1533,6 +1532,9 @@
     <Content Include="Views\Partials\Politics\_PollPage.cshtml" />
     <Content Include="Views\PollTable.cshtml" />
     <Content Include="Views\DataTable.cshtml" />
+    <Content Include="Views\Partials\Article\_MenuItemsList.vbhtml" />
+    <Content Include="Views\MenuPageGallery.cshtml" />
+    <Content Include="Views\MenuPageList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

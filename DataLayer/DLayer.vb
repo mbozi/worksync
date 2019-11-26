@@ -58,11 +58,7 @@ Public Class DLayer
 
     Private Shared Function GetPollingCompanies() As DataTable
         Dim dt As New DataTable
-
         Dim strSQL As String = "Select ID, PollerName FROM dbo.Pollers"
-
-
-        'Dim strSQL As String = "SELECT ID, PollerID, PollerName, Comment, PollDate, Con, Lab, Lib, Brx, Grn, SNP, PC, UKP FROM dbo.vwPolls"
         Using conn As New SqlConnection(My.Settings.CS)
             'conn.Open()
             Using dad As New SqlDataAdapter(strSQL, conn)

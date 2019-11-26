@@ -1,6 +1,6 @@
 ﻿Imports System.Collections.Generic
 Imports System.Linq
-Public Class Navigation
+Public Class NavigationLink
 
     Public Property Text As String
     Public Property Url As String
@@ -27,7 +27,7 @@ End Class
 
 Public Class NavigationListItem
     Public Property Text As String
-    Public Property Link As Navigation
+    Public Property Link As NavigationLink
     Public Property Items As List(Of NavigationListItem)
 
     Public ReadOnly Property HasChildren As Boolean
@@ -39,7 +39,7 @@ Public Class NavigationListItem
     Public Sub New()
     End Sub
 
-    Public Sub New(ByVal nlink As Navigation)
+    Public Sub New(ByVal nlink As NavigationLink)
         Link = nlink
     End Sub
 
