@@ -1,26 +1,28 @@
 ﻿@Imports worksync
-@ModelType List(Of ArticlePreview)
+@ModelType List(Of ArticleImageGallery)
+
+<div class="article-list" style="margin-bottom: 9em;">
     <div class="container">
-        <div class="row">
-            @For Each item As ArticlePreview In Model.OrderByDescending(Function(x) x.ItemDate)
-                @RenderBlogPreview(item)
-            Next
+        <div class="row articles">
+            @RenderBlogPreview(Model)
         </div>
     </div>
+</div>
 
-        @Helper RenderBlogPreview(item As ArticlePreview)
-            @<div class="col-md-4 text-center">
-                <div class="blog-inner">
-                    <a href="@item.LinkURL" target="_blank"><img class="img-responsive" src="@item.ImageURL" alt="@item.Name"></a>
-                    <div class="desc">
-                        <h3><a href="@item.LinkURL" target="_blank">@item.Name</a></h3>
-                        <a>@item.ItemDate.ToString("dd MMM yyyy")</a>
-                        <p>@item.Introduction</p>
-                        @*<p><a href="@item.LinkURL" class="btn btn-primary btn-outline with-arrow">Read More<i class="icon-arrow-right"></i></a></p>*@
-                    </div>
-                </div>
-            </div>
-        End Helper
+
+
+
+@Helper RenderBlogPreview(items As List(Of ArticleImageGallery))
+    For Each item As ArticleImageGallery In Model.OrderByDescending(Function(x) x.ItemDate)
+        @<div Class="col-sm-6 col-md-4 item">
+            <a href="@item.LinkURL" target="_blank"><img class="img-fluid" src="@item.ImageURL"></a>
+            <h3 Class="name">@item.Name</h3>
+            <a>@item.ItemDate.ToString("dd MMM yyyy")</a>
+            <p Class="description">@item.Introduction</p>
+        </div>
+    Next
+End Helper
+
 
 
 

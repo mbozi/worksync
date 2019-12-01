@@ -10,10 +10,10 @@ Public Class ArticleController
     Private Const PARTIAL_VIEW_FOLDER = "~/Views/Partials/Article/"
 
     Public Function RenderMenuPageGallery() As ActionResult
-        Dim model As New List(Of ArticlePreview)
+        Dim model As New List(Of ArticleImageGallery)
         Dim blogpage As IPublishedContent = CurrentPage.AncestorOrSelf(1).DescendantsOrSelf().Where(Function(x) x.DocumentTypeAlias = "menuPage" AndAlso x.Name = CurrentPage.Name).FirstOrDefault
         For Each page As IPublishedContent In blogpage.Children
-            model.Add(New ArticlePreview With {
+            model.Add(New ArticleImageGallery With {
                       .ImageURL = page.GetPropertyValue("articleImage").URL,
                       .Introduction = page.GetPropertyValue("articleIntro").ToString,
                       .LinkURL = "\Gallery?FolderName=" & page.GetPropertyValue("imageFolder").ToString,
@@ -24,10 +24,10 @@ Public Class ArticleController
     End Function
 
     Public Function RenderMenuPageList() As ActionResult
-        Dim model As New List(Of ArticlePreview)
+        Dim model As New List(Of ArticleImageGallery)
         Dim blogpage As IPublishedContent = CurrentPage.AncestorOrSelf(1).DescendantsOrSelf().Where(Function(x) x.DocumentTypeAlias = "menuPage" AndAlso x.Name = CurrentPage.Name).FirstOrDefault
         For Each page As IPublishedContent In blogpage.Children
-            model.Add(New ArticlePreview With {
+            model.Add(New ArticleImageGallery With {
                       .ImageURL = "",
                       .Introduction = page.GetPropertyValue("articleIntro").ToString,
                       .LinkURL = page.UrlName,

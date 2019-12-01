@@ -3,18 +3,21 @@
 
 
 
-<header id="fh5co-header" role="banner">
-    <div Class="container">
-        <div Class="header-inner">
-            <h1> <i Class="sl-icon-energy"></i><a href="\">WORKSYNC</a></h1>
-            <nav role="navigation">
-                <ul>
-                    @RenderChildItems(Model.PageList)
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top border-info shadow" style="background-color: rgb(203,231,255);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">worksync.net</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        @RenderChildItems(Model.PageList)
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
 
 @Helper RenderChildItems(listitems As IEnumerable(Of worksync.NavigationListItem))
     If listitems IsNot Nothing Then
@@ -28,13 +31,14 @@
                 T2 = item.Link.Target
                 T3 = item.Link.Text
                 If Model.PageName.ToLower = item.Link.Url.Replace("/", "") Or (Model.PageName.ToLower = "home" AndAlso item.Link.Url = "/") Then
-                    T1 = "active"
-                    If item.HasChildren Then T1 &= "fh5co-Sub-ddown"
+                    T1 = " active"
+                    'If item.HasChildren Then T1 &= "fh5co-Sub-ddown"
                 End If
-                Dim Tag As String = String.Format("<li><a href=""{0}"" Class=""{1}"" Target=""{2}"">{3}</a></li>", T0, T1, T2, T3)
+                'Dim Tag1 As String = String.Format("<li><a href=""{0}"" Class=""{1}"" Target=""{2}"">{3}</a></li>", T0, T1, T2, T3)
+                Dim Tag As String = String.Format("<li class=""nav-item"" role=""presentation""><a class=""nav-link{1}"" href=""{0}"" Target=""{2}"">{3}</a></li>", T0, T1, T2, T3)
                 @Html.Raw(Tag) End If
         Next
-        @Html.Raw(String.Format("<li><a href=""{0}"" Class=""{1}"" Target=""{2}"">{3}</a></li>", "/Umbraco/", "", "", "Login"))
+        @Html.Raw(String.Format("<li class=""nav-item"" role=""presentation""><a class=""nav-link{1}"" href=""{0}"" Target=""{2}"">{3}</a></li>", "/Umbraco/", "", "_blank", "Login"))
     End If
 
 End Helper
