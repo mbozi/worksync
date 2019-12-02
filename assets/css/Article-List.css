@@ -44,7 +44,7 @@
 
 .article-list .item .name {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 36px;
   margin-top: 20px;
   color: inherit;
 }
@@ -69,5 +69,33 @@
 
 .article-list .item .action:hover {
   opacity: 1;
+}
+
+.row articles name {
+  font-size: 10px;
+}
+
+.h3, h3 {
+}
+
+@media (max-width: 768px) {
+  .footer-column {
+  }
+}
+
+.table-fixed tbody {
+  height: 300px;
+  overflow-y: auto;
+  width: 80%;
+}
+
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+
+.table-fixed tbody td, .table-fixed tbody th, .table-fixed thead > tr > th {
+  float: left;
+  position: relative;
+  &: g::after {content: '';clear: both;display: block;};
 }
 

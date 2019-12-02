@@ -12532,9 +12532,18 @@ home-grid.desc {
   line-height: 50px;
 }
 
-.pagetitle {
-  padding-top: 12em;
-  padding-bottom: 4em;
+@media (min-width: 1000px) {
+  .pagetitle {
+    padding-top: 12em;
+    padding-bottom: 4em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pagetitle {
+    padding-top: 6em;
+    padding-bottom: 0em;
+  }
 }
 
 #footer {
@@ -12556,7 +12565,9 @@ home-grid.desc {
   width: -webkit-fill-available;
 }
 
-.home-grid {
-  height: 510px;
+@media (min-width: 726px) {
+  .home-grid {
+    height: 510px;
+  }
 }
 

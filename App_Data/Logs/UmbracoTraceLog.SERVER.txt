@@ -871,3 +871,809 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2019-12-02 13:05:34,725 [P54800/D12/T446] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
  2019-12-02 13:05:34,729 [P54800/D12/T446] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
  2019-12-02 13:06:29,814 [P54800/D12/T5] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-12-01 13:06:29
+ 2019-12-02 13:36:56,508 [P54800/D12/T490] INFO  Umbraco.Core.MainDom - Stopping...
+ 2019-12-02 13:36:56,510 [P54800/D12/T490] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2019-12-02 13:36:56,513 [P54800/D12/T490] INFO  Umbraco.Web.ExamineStartup - Complete (took 3ms)
+ 2019-12-02 13:36:56,514 [P54800/D12/T490] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2019-12-02 13:36:56,515 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2019-12-02 13:36:56,515 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2019-12-02 13:36:56,515 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2019-12-02 13:36:56,520 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2019-12-02 13:36:56,521 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2019-12-02 13:36:56,521 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2019-12-02 13:36:56,521 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2019-12-02 13:36:56,521 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2019-12-02 13:36:56,521 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2019-12-02 13:36:56,521 [P54800/D12/T361] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2019-12-02 13:36:56,521 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2019-12-02 13:36:56,522 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2019-12-02 13:36:56,522 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2019-12-02 13:36:56,522 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2019-12-02 13:36:56,521 [P54800/D12/T462] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2019-12-02 13:36:56,522 [P54800/D12/T361] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2019-12-02 13:36:56,521 [P54800/D12/T354] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2019-12-02 13:36:56,522 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2019-12-02 13:36:56,523 [P54800/D12/T490] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2019-12-02 13:36:56,523 [P54800/D12/T354] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2019-12-02 13:36:56,522 [P54800/D12/T374] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2019-12-02 13:36:56,525 [P54800/D12/T490] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2019-12-02 19:48:19,418 [P18204/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.15.3 application starting on SERVER
+ 2019-12-02 19:48:19,439 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-12-02 19:48:19,452 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 12ms)
+ 2019-12-02 19:48:19,493 [P18204/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-12-02 19:48:19,494 [P18204/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-12-02 19:48:19,495 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:19,735 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 240ms)
+ 2019-12-02 19:48:19,735 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-12-02 19:48:19,736 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 0ms)
+ 2019-12-02 19:48:19,770 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:19,770 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:19,770 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-12-02 19:48:19,770 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2019-12-02 19:48:19,771 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:19,771 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:19,771 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-12-02 19:48:19,772 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 0ms)
+ 2019-12-02 19:48:19,781 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:19,781 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:19,781 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-12-02 19:48:19,781 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2019-12-02 19:48:19,781 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:19,781 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:19,782 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-12-02 19:48:19,782 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 0ms)
+ 2019-12-02 19:48:22,877 [P18204/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-12-02 19:48:23,137 [P18204/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-12-02 19:48:23,157 [P18204/D2/T1] INFO  Umbraco.Forms.Core.Cache.CacheEventHandler - Initializing Umbraco Forms Events to trigger Cache Refreshers
+ 2019-12-02 19:48:23,252 [P18204/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-12-02 19:48:23,408 [P18204/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-12-02 19:48:23,417 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:23,417 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:23,417 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-12-02 19:48:23,418 [P18204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
+ 2019-12-02 19:48:23,555 [P18204/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 4211ms)
+ 2019-12-02 19:48:23,706 [P18204/D2/T24] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://worksync.web.local:80/umbraco
+ 2019-12-02 19:48:23,707 [P18204/D2/T24] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://worksync.web.local:80/umbraco (UmbracoModule request)
+ 2019-12-02 19:48:25,737 [P18204/D2/T24] INFO  umbraco.content - Load Xml from file...
+ 2019-12-02 19:48:25,744 [P18204/D2/T24] INFO  umbraco.content - Loaded Xml from file.
+ 2019-12-02 19:48:26,441 [P18204/D2/T24] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:26,441 [P18204/D2/T24] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:26,442 [P18204/D2/T24] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-12-02 19:48:26,442 [P18204/D2/T24] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 0ms)
+ 2019-12-02 19:48:26,450 [P18204/D2/T10] INFO  Umbraco.Core.Manifest.ManifestWatcher - manifest has changed, app pool is restarting (E:\WEBSITE\worksync\worksync\App_Plugins\ModelsBuilder\package.manifest)
+ 2019-12-02 19:48:26,458 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2019-12-02 19:48:26,458 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2019-12-02 19:48:26,459 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2019-12-02 19:48:26,459 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2019-12-02 19:48:26,460 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2019-12-02 19:48:26,460 [P18204/D2/T18] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2019-12-02 19:48:26,463 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2019-12-02 19:48:26,464 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2019-12-02 19:48:26,464 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2019-12-02 19:48:26,464 [P18204/D2/T13] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2019-12-02 19:48:26,464 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2019-12-02 19:48:26,464 [P18204/D2/T13] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2019-12-02 19:48:26,464 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2019-12-02 19:48:26,465 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2019-12-02 19:48:26,465 [P18204/D2/T13] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2019-12-02 19:48:26,466 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2019-12-02 19:48:26,466 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2019-12-02 19:48:26,466 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2019-12-02 19:48:26,466 [P18204/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2019-12-02 19:48:26,466 [P18204/D2/T18] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2019-12-02 19:48:26,466 [P18204/D2/T16] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2019-12-02 19:48:26,468 [P18204/D2/T21] INFO  Umbraco.Core.MainDom - Stopping...
+ 2019-12-02 19:48:26,469 [P18204/D2/T21] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2019-12-02 19:48:26,473 [P18204/D2/T21] INFO  Umbraco.Web.ExamineStartup - Complete (took 4ms)
+ 2019-12-02 19:48:26,474 [P18204/D2/T21] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2019-12-02 19:48:26,969 [P18204/D2/T24] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type worksync.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-12-02 19:48:27,186 [P18204/D2/T24] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:27,186 [P18204/D2/T24] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:27,186 [P18204/D2/T24] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-12-02 19:48:27,186 [P18204/D2/T24] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 0ms)
+ 2019-12-02 19:48:27,480 [P18204/D2/T21] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: UnloadAppDomainCalled
+
+_shutDownMessage=User code called UnloadAppDomain
+HostingEnvironment initiated shutdown
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.UnloadAppDomain()
+   at Umbraco.Core.Manifest.ManifestWatcher.FswChanged(Object sender, FileSystemEventArgs e)
+   at System.IO.FileSystemWatcher.OnChanged(FileSystemEventArgs e)
+   at System.IO.FileSystemWatcher.CompletionStatusChanged(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* overlappedPointer)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
+ 2019-12-02 19:48:27,703 [P18204/D3/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.15.3 application starting on SERVER
+ 2019-12-02 19:48:27,720 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-12-02 19:48:27,728 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2019-12-02 19:48:27,760 [P18204/D3/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-12-02 19:48:27,761 [P18204/D3/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-12-02 19:48:27,763 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:27,854 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 91ms)
+ 2019-12-02 19:48:27,854 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-12-02 19:48:27,855 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 0ms)
+ 2019-12-02 19:48:27,871 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:27,872 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:27,872 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-12-02 19:48:27,872 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2019-12-02 19:48:27,872 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:27,872 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:27,873 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-12-02 19:48:27,873 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 0ms)
+ 2019-12-02 19:48:27,882 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:27,882 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:27,882 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-12-02 19:48:27,883 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2019-12-02 19:48:27,883 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:27,883 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:27,883 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-12-02 19:48:27,883 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 0ms)
+ 2019-12-02 19:48:29,233 [P18204/D3/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-12-02 19:48:29,466 [P18204/D3/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-12-02 19:48:29,485 [P18204/D3/T1] INFO  Umbraco.Forms.Core.Cache.CacheEventHandler - Initializing Umbraco Forms Events to trigger Cache Refreshers
+ 2019-12-02 19:48:29,581 [P18204/D3/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-12-02 19:48:29,645 [P18204/D3/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-12-02 19:48:29,654 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:29,654 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:29,654 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-12-02 19:48:29,655 [P18204/D3/T1] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
+ 2019-12-02 19:48:29,788 [P18204/D3/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2144ms)
+ 2019-12-02 19:48:29,916 [P18204/D3/T15] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://worksync.web.local:80/umbraco
+ 2019-12-02 19:48:29,918 [P18204/D3/T15] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://worksync.web.local:80/umbraco (UmbracoModule request)
+ 2019-12-02 19:48:41,800 [P18204/D3/T18] INFO  umbraco.content - Load Xml from file...
+ 2019-12-02 19:48:41,800 [P18204/D3/T18] INFO  umbraco.content - Loaded Xml from file.
+ 2019-12-02 19:48:42,198 [P18204/D3/T18] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:42,198 [P18204/D3/T18] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:42,198 [P18204/D3/T18] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-12-02 19:48:42,198 [P18204/D3/T18] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 0ms)
+ 2019-12-02 19:48:42,821 [P18204/D3/T18] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:42,821 [P18204/D3/T18] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:42,822 [P18204/D3/T18] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-12-02 19:48:42,822 [P18204/D3/T18] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 0ms)
+ 2019-12-02 19:48:49,244 [P18204/D3/T23] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2019-12-02 19:48:58,451 [P18204/D3/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:58,451 [P18204/D3/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:58,452 [P18204/D3/T11] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2019-12-02 19:48:58,458 [P18204/D3/T11] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 6ms)
+ 2019-12-02 19:48:58,531 [P18204/D3/T22] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:48:58,531 [P18204/D3/T22] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:48:58,531 [P18204/D3/T22] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2019-12-02 19:48:58,537 [P18204/D3/T22] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 5ms)
+ 2019-12-02 19:49:41,857 [P18204/D3/T18] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-12-01 19:49:41
+ 2019-12-02 19:50:09,503 [P18204/D3/T34] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type worksync.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-12-02 19:50:14,723 [P18204/D3/T12] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type worksync.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-12-02 19:50:15,508 [P18204/D3/T22] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type worksync.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-12-02 19:58:22,070 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2019-12-02 19:58:22,070 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2019-12-02 19:58:22,072 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2019-12-02 19:58:22,072 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2019-12-02 19:58:22,073 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2019-12-02 19:58:22,073 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2019-12-02 19:58:22,073 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2019-12-02 19:58:22,073 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2019-12-02 19:58:22,073 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2019-12-02 19:58:22,074 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2019-12-02 19:58:22,075 [P18204/D3/T125] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2019-12-02 19:58:22,075 [P18204/D3/T141] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2019-12-02 19:58:22,076 [P18204/D3/T24] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2019-12-02 19:58:22,076 [P18204/D3/T155] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2019-12-02 19:58:22,075 [P18204/D3/T147] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2019-12-02 19:58:22,079 [P18204/D3/T124] INFO  Umbraco.Core.MainDom - Stopping...
+ 2019-12-02 19:58:22,080 [P18204/D3/T124] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2019-12-02 19:58:22,084 [P18204/D3/T124] INFO  Umbraco.Web.ExamineStartup - Complete (took 3ms)
+ 2019-12-02 19:58:22,085 [P18204/D3/T124] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2019-12-02 19:58:22,085 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2019-12-02 19:58:22,085 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2019-12-02 19:58:22,085 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2019-12-02 19:58:22,085 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2019-12-02 19:58:22,085 [P18204/D3/T124] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2019-12-02 19:58:22,085 [P18204/D3/T153] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2019-12-02 19:58:22,087 [P18204/D3/T124] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2019-12-02 19:58:34,446 [P18204/D4/T157] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.15.3 application starting on SERVER
+ 2019-12-02 19:58:34,462 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-12-02 19:58:34,471 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2019-12-02 19:58:34,512 [P18204/D4/T157] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-12-02 19:58:34,513 [P18204/D4/T157] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-12-02 19:58:34,514 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:58:34,656 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 141ms)
+ 2019-12-02 19:58:34,656 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-12-02 19:58:34,661 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 4ms)
+ 2019-12-02 19:58:34,674 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:58:34,674 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:58:34,675 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-12-02 19:58:34,679 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 4ms)
+ 2019-12-02 19:58:34,679 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:58:34,679 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:58:34,680 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-12-02 19:58:34,684 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 4ms)
+ 2019-12-02 19:58:34,694 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:58:34,694 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:58:34,694 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-12-02 19:58:34,698 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 4ms)
+ 2019-12-02 19:58:34,699 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:58:34,699 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:58:34,699 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-12-02 19:58:34,703 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 4ms)
+ 2019-12-02 19:58:35,818 [P18204/D4/T157] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-12-02 19:58:36,053 [P18204/D4/T157] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-12-02 19:58:36,077 [P18204/D4/T157] INFO  Umbraco.Forms.Core.Cache.CacheEventHandler - Initializing Umbraco Forms Events to trigger Cache Refreshers
+ 2019-12-02 19:58:36,166 [P18204/D4/T157] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-12-02 19:58:36,230 [P18204/D4/T157] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-12-02 19:58:36,239 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:58:36,239 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:58:36,239 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-12-02 19:58:36,244 [P18204/D4/T157] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2019-12-02 19:58:36,374 [P18204/D4/T157] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1986ms)
+ 2019-12-02 19:58:36,488 [P18204/D4/T144] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://worksync.web.local:80/umbraco
+ 2019-12-02 19:58:36,489 [P18204/D4/T144] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://worksync.web.local:80/umbraco (UmbracoModule request)
+ 2019-12-02 19:58:36,690 [P18204/D4/T144] INFO  umbraco.content - Load Xml from file...
+ 2019-12-02 19:58:36,691 [P18204/D4/T144] INFO  umbraco.content - Loaded Xml from file.
+ 2019-12-02 19:58:37,087 [P18204/D4/T144] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:58:37,088 [P18204/D4/T144] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:58:37,088 [P18204/D4/T144] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-12-02 19:58:37,092 [P18204/D4/T144] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2019-12-02 19:58:38,406 [P18204/D4/T144] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type worksync.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-12-02 19:58:41,662 [P18204/D4/T144] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 19:58:41,662 [P18204/D4/T144] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 19:58:41,662 [P18204/D4/T144] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-12-02 19:58:41,666 [P18204/D4/T144] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2019-12-02 19:59:06,714 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating (immediate)
+ 2019-12-02 19:59:06,715 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Cancelling tasks
+ 2019-12-02 19:59:06,817 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks cancelled, terminated
+ 2019-12-02 19:59:06,817 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating (immediate)
+ 2019-12-02 19:59:06,817 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Cancelling tasks
+ 2019-12-02 19:59:06,919 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks cancelled, terminated
+ 2019-12-02 19:59:06,922 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating (immediate)
+ 2019-12-02 19:59:06,922 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Cancelling tasks
+ 2019-12-02 19:59:07,023 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks cancelled, terminated
+ 2019-12-02 19:59:07,023 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating (immediate)
+ 2019-12-02 19:59:07,023 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Cancelling tasks
+ 2019-12-02 19:59:07,124 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks cancelled, terminated
+ 2019-12-02 19:59:07,124 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating (immediate)
+ 2019-12-02 19:59:07,124 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Cancelling tasks
+ 2019-12-02 19:59:07,225 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks cancelled, terminated
+ 2019-12-02 19:59:07,225 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating (immediate)
+ 2019-12-02 19:59:07,225 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Cancelling tasks
+ 2019-12-02 19:59:07,326 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks cancelled, terminated
+ 2019-12-02 19:59:07,327 [P18204/D4/T140] INFO  Umbraco.Core.MainDom - Stopping...
+ 2019-12-02 19:59:07,329 [P18204/D4/T140] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2019-12-02 19:59:07,332 [P18204/D4/T140] INFO  Umbraco.Web.ExamineStartup - Complete (took 3ms)
+ 2019-12-02 19:59:07,332 [P18204/D4/T140] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2019-12-02 19:59:07,333 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating (immediate)
+ 2019-12-02 19:59:07,333 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Cancelling tasks
+ 2019-12-02 19:59:07,333 [P18204/D4/T140] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks cancelled, terminated
+ 2019-12-02 19:59:07,335 [P18204/D4/T140] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2019-12-02 20:04:58,191 [P18204/D5/T157] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.15.3 application starting on SERVER
+ 2019-12-02 20:04:58,207 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-12-02 20:04:58,215 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2019-12-02 20:04:58,251 [P18204/D5/T157] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-12-02 20:04:58,252 [P18204/D5/T157] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-12-02 20:04:58,254 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 20:04:58,277 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 23ms)
+ 2019-12-02 20:04:58,277 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-12-02 20:04:58,278 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 0ms)
+ 2019-12-02 20:04:58,294 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 20:04:58,295 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 20:04:58,295 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-12-02 20:04:58,295 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2019-12-02 20:04:58,295 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 20:04:58,295 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 20:04:58,295 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-12-02 20:04:58,296 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 0ms)
+ 2019-12-02 20:04:58,306 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 20:04:58,306 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 20:04:58,306 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-12-02 20:04:58,306 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2019-12-02 20:04:58,306 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 20:04:58,307 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 20:04:58,307 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-12-02 20:04:58,307 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 0ms)
+ 2019-12-02 20:04:59,421 [P18204/D5/T157] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-12-02 20:04:59,655 [P18204/D5/T157] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-12-02 20:04:59,681 [P18204/D5/T157] INFO  Umbraco.Forms.Core.Cache.CacheEventHandler - Initializing Umbraco Forms Events to trigger Cache Refreshers
+ 2019-12-02 20:04:59,772 [P18204/D5/T157] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-12-02 20:04:59,838 [P18204/D5/T157] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-12-02 20:04:59,848 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 20:04:59,848 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 20:04:59,848 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-12-02 20:04:59,848 [P18204/D5/T157] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
+ 2019-12-02 20:04:59,982 [P18204/D5/T157] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1849ms)
+ 2019-12-02 20:05:00,100 [P18204/D5/T265] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://worksync.web.local:80/umbraco
+ 2019-12-02 20:05:00,101 [P18204/D5/T265] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://worksync.web.local:80/umbraco (UmbracoModule request)
+ 2019-12-02 20:05:00,360 [P18204/D5/T265] INFO  umbraco.content - Load Xml from file...
+ 2019-12-02 20:05:00,361 [P18204/D5/T265] INFO  umbraco.content - Loaded Xml from file.
+ 2019-12-02 20:05:00,833 [P18204/D5/T265] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 20:05:00,833 [P18204/D5/T265] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 20:05:00,834 [P18204/D5/T265] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-12-02 20:05:00,834 [P18204/D5/T265] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 0ms)
+ 2019-12-02 20:05:02,137 [P18204/D5/T265] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type worksync.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-12-02 20:05:05,300 [P18204/D5/T265] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-12-02 20:05:05,301 [P18204/D5/T265] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-12-02 20:05:05,301 [P18204/D5/T265] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-12-02 20:05:05,301 [P18204/D5/T265] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 0ms)
+ 2019-12-02 20:06:00,415 [P18204/D5/T278] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-12-01 20:06:00
