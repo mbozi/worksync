@@ -1,0 +1,22 @@
+.article-list li {
+  background-color: #6699cc;
+  height: 50px;
+  padding: 5px;
+  padding-left: 10px;
+  color: #003366;
+  font-weight: 400;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  margin: 6px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px rgba(52,104,156,0.35) !important;
+  -webkit-box-shadow: 4px 4px 4px rgba(52,104,156,0.35) !important;
+}
+
+.fas.fa-feather {
+  line-height: 14px;
+  font-size: 28px;
+  padding-top: 8px;
+}
+

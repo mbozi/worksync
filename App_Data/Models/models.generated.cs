@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7bff5194af10f55e")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7bbc5963cdeb5244")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.6")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -370,9 +370,6 @@ namespace Umbraco.Web.PublishedContentModels
 		/// <summary>Article Image</summary>
 		IPublishedContent ArticleImage { get; }
 
-		/// <summary>Article Intro</summary>
-		string ArticleIntro { get; }
-
 		/// <summary>Image Folder</summary>
 		string ImageFolder { get; }
 	}
@@ -425,18 +422,6 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Static getter for Article Image</summary>
 		public static IPublishedContent GetArticleImage(IArticleControls that) { return that.GetPropertyValue<IPublishedContent>("articleImage"); }
-
-		///<summary>
-		/// Article Intro
-		///</summary>
-		[ImplementPropertyType("articleIntro")]
-		public string ArticleIntro
-		{
-			get { return GetArticleIntro(this); }
-		}
-
-		/// <summary>Static getter for Article Intro</summary>
-		public static string GetArticleIntro(IArticleControls that) { return that.GetPropertyValue<string>("articleIntro"); }
 
 		///<summary>
 		/// Image Folder: Used in Photo Galleries
@@ -538,15 +523,6 @@ namespace Umbraco.Web.PublishedContentModels
 		public IPublishedContent ArticleImage
 		{
 			get { return Umbraco.Web.PublishedContentModels.ArticleControls.GetArticleImage(this); }
-		}
-
-		///<summary>
-		/// Article Intro
-		///</summary>
-		[ImplementPropertyType("articleIntro")]
-		public string ArticleIntro
-		{
-			get { return Umbraco.Web.PublishedContentModels.ArticleControls.GetArticleIntro(this); }
 		}
 
 		///<summary>

@@ -15,7 +15,7 @@ Public Class ArticleController
         For Each page As IPublishedContent In blogpage.Children
             model.Add(New ArticleImageGallery With {
                       .ImageURL = page.GetPropertyValue("articleImage").URL,
-                      .Introduction = page.GetPropertyValue("articleIntro").ToString,
+                      .Introduction = page.GetPropertyValue("subTitle").ToString,
                       .LinkURL = "\Gallery?FolderName=" & page.GetPropertyValue("imageFolder").ToString,
                       .Name = page.GetPropertyValue("title").ToString,
                       .ItemDate = page.GetPropertyValue("articleDate")})
@@ -29,7 +29,7 @@ Public Class ArticleController
         For Each page As IPublishedContent In blogpage.Children
             model.Add(New ArticleImageGallery With {
                       .ImageURL = "",
-                      .Introduction = page.GetPropertyValue("articleIntro").ToString,
+                      .Introduction = page.GetPropertyValue("subTitle").ToString,
                       .LinkURL = page.UrlName,
                       .Name = page.GetPropertyValue("title").ToString,
                       .ItemDate = page.GetPropertyValue("articleDate")})

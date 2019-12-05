@@ -18,7 +18,7 @@
             <a href="@item.LinkURL" target="_blank"><img class="img-fluid" src="@item.ImageURL"></a>
             <h3 Class="name">@item.Name</h3>
             <a>@item.ItemDate.ToString("dd MMM yyyy")</a>
-            <p Class="description">@item.Introduction</p>
+            <p Class="description">@Html.Raw(item.Introduction)</p>
         </div>
     Next
 End Helper
