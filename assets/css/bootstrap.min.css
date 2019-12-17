@@ -5158,6 +5158,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    border-radius: 15px;
   }
 }
 
@@ -12546,13 +12547,16 @@ home-grid.desc {
 }
 
 .footer {
-  box-shadow: 0 -0.5rem 1rem rgba(0,0,0,0.15) !important;
-  -webkit-box-shadow: 0 -0.5rem 1rem rgba(0,0,0,0.15) !important;
   padding-top: 0px;
   position: fixed;
   bottom: 0;
   z-index: 9;
   width: -webkit-fill-available;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 -0.5rem 1rem rgba(0,0,0,0.15) !important;
+  box-shadow: 0 -0.5rem 1rem rgba(0,0,0,0.15) !important;
+  border-radius: 15px;
+  background-color: white;
 }
 
 @media (min-width: 726px) {

@@ -19,17 +19,14 @@
 }
 
 .navbar.navbar-light.navbar-expand-md.fixed-top.border-info.shadow {
-  background-color: rgb(203,231,255);
-  background-image: linear-gradient(to bottom right, #003366 , #99CCFF);
   height: 57px;
+  background-color: white;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  background-image: linear-gradient(to bottom right, #003366 , #99CCFF);
 }
 
 .footer.row {
-  background-image: linear-gradient(to bottom right, #003366 , #99CCFF);
   height: 57px;
 }
 
@@ -64,5 +61,15 @@ pre {
   background-color: #CCCCCC;
   border-radius: 15px;
   padding: 10px;
+}
+
+footer a {
+  color: black;
+}
+
+footer div {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 5px;
 }
 
