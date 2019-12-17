@@ -19,7 +19,7 @@
         Dim T1 As String = String.Empty
         T0 = item.LinkURL
         T1 = item.Name
-        Dim Tag As String = String.Format("<li><i class=""fas fa-feather""></i><a href=""{0}"">{1}</a></li>", T0, T1)
+        Dim Tag As String = String.Format("<li><a href=""{0}""><i class=""fas fa-feather""></i> {1}</a></li>", T0, T1)
         @Html.Raw(Tag)
         @*@<tr id="@item.LinkURL"><td>@item.Name</td><td> @Html.Raw(item.Introduction)</td><td>@item.ItemDate</td><td>@item.ImageFolder</td><td>@item.LinkURL</td><td>@item.ImageURL</td></tr>*@
     Next

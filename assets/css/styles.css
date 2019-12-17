@@ -1,7 +1,7 @@
 .article-list li {
   background-color: #6699cc;
   height: 50px;
-  padding: 5px;
+  padding: 0px;
   padding-left: 10px;
   color: #003366;
   font-weight: 400;
@@ -15,8 +15,54 @@
 }
 
 .fas.fa-feather {
+  font-size: 36px;
+}
+
+.navbar.navbar-light.navbar-expand-md.fixed-top.border-info.shadow {
+  background-color: rgb(203,231,255);
+  background-image: linear-gradient(to bottom right, #003366 , #99CCFF);
+  height: 57px;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  background-image: linear-gradient(to bottom right, #003366 , #99CCFF);
+}
+
+.footer.row {
+  background-image: linear-gradient(to bottom right, #003366 , #99CCFF);
+  height: 57px;
+}
+
+.row.footer p {
   line-height: 14px;
-  font-size: 28px;
-  padding-top: 8px;
+}
+
+.codebox {
+  background-color: #DDDDDD;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-family: monospace;
+  font-size: inherit;
+  padding-top: 10px;
+  padding: 10px;
+  border-radius: 1.0rem;
+  border-color: transparent;
+}
+
+*.alistitem {
+  background-color: #6699cc;
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  border-radius: 15px;
+}
+
+pre {
+  display: block;
+  font-size: 87.5%;
+  color: #212529;
+  background-color: #CCCCCC;
+  border-radius: 15px;
+  padding: 10px;
 }
 

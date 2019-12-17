@@ -90,3 +90,32 @@
   width: 80%;
 }
 
+.articleitem {
+  background: #6699CC;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+.fixed-col1 {
+  width: 50px;
+  min-width: 50px;
+  display: table-cell;
+  max-width: 50px;
+}
+
+.fixed-col3 {
+  width: 100px;
+  display: table-cell;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.contentcol2 {
+  display: table-cell;
+}
+
+.col-6.offset-3.artcont {
+  width: 100%;
+  display: table;
+}
+

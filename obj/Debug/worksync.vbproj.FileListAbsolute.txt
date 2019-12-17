@@ -121,4 +121,3 @@ E:\WEBSITE\worksync\worksync\obj\Debug\worksync.dll
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.xml
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.pdb
 E:\WEBSITE\worksync\worksync\bin\App_Data\NuGetBackup\20191121-232613\bin\AutoMapper.Net4.dll
-E:\WEBSITE\worksync\worksync\obj\Debug\worksync.vbprojAssemblyReference.cache
