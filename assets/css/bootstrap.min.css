@@ -5168,6 +5168,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    background-color: white;
   }
 }
 

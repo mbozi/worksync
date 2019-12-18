@@ -1,4 +1,4 @@
-E:\WEBSITE\worksync\worksync\bin\AutoMapper.Net4.dll
+E:\WEBSITE\worksync\worksync\bin\App_Data\NuGetBackup\20191121-232613\bin\AutoMapper.Net4.dll
 E:\WEBSITE\worksync\worksync\bin\worksync.dll.config
 E:\WEBSITE\worksync\worksync\bin\worksync.dll
 E:\WEBSITE\worksync\worksync\bin\worksync.pdb
@@ -53,6 +53,7 @@ E:\WEBSITE\worksync\worksync\bin\System.Xml.XmlDocument.dll
 E:\WEBSITE\worksync\worksync\bin\System.Xml.XPath.dll
 E:\WEBSITE\worksync\worksync\bin\System.Xml.XPath.XDocument.dll
 E:\WEBSITE\worksync\worksync\bin\AutoMapper.dll
+E:\WEBSITE\worksync\worksync\bin\AutoMapper.Net4.dll
 E:\WEBSITE\worksync\worksync\bin\businesslogic.dll
 E:\WEBSITE\worksync\worksync\bin\ClientDependency.Core.dll
 E:\WEBSITE\worksync\worksync\bin\ClientDependency.Core.Mvc.dll
@@ -114,11 +115,10 @@ E:\WEBSITE\worksync\worksync\bin\umbraco.providers.dll
 E:\WEBSITE\worksync\worksync\bin\Umbraco.Web.UI.dll
 E:\WEBSITE\worksync\worksync\bin\UmbracoExamine.dll
 E:\WEBSITE\worksync\worksync\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\WEBSITE\worksync\worksync\obj\Debug\worksync.vbprojAssemblyReference.cache
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.Resources.resources
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.vbproj.GenerateResource.cache
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.vbproj.CopyComplete
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.dll
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.xml
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.pdb
-E:\WEBSITE\worksync\worksync\bin\App_Data\NuGetBackup\20191121-232613\bin\AutoMapper.Net4.dll
-E:\WEBSITE\worksync\worksync\obj\Debug\worksync.vbprojAssemblyReference.cache

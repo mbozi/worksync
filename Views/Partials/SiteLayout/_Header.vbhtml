@@ -3,12 +3,10 @@
 
 
     <header>
-
         <nav class="navbar navbar-light navbar-expand-md fixed-top border-info shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">worksync.net</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><i class="fas fa-bars"></i></button>
-                <div class="collapse navbar-collapse"
-                     id="navcol-1">
+                <a class="navbar-brand" href="#" style="font-size: 14pt;">worksync.net</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         @RenderChildItems(Model.PageList)
                     </ul>
