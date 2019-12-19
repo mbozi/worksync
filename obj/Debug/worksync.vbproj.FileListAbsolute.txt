@@ -115,7 +115,6 @@ E:\WEBSITE\worksync\worksync\bin\umbraco.providers.dll
 E:\WEBSITE\worksync\worksync\bin\Umbraco.Web.UI.dll
 E:\WEBSITE\worksync\worksync\bin\UmbracoExamine.dll
 E:\WEBSITE\worksync\worksync\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\WEBSITE\worksync\worksync\obj\Debug\worksync.vbprojAssemblyReference.cache
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.Resources.resources
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.vbproj.GenerateResource.cache
 E:\WEBSITE\worksync\worksync\obj\Debug\worksync.vbproj.CopyComplete

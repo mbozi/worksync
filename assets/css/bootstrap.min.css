@@ -12566,3 +12566,43 @@ home-grid.desc {
   }
 }
 
+.desc {
+  padding: 30px;
+  z-index: 9;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.workgrid {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 12px;
+}
+
+.work-inner {
+  background: white;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+  -ms-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+  -o-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
