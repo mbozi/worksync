@@ -505,13 +505,9 @@
     <Content Include="assets\fonts\ionicons.svg" />
     <Content Include="assets\fonts\ionicons.ttf" />
     <Content Include="assets\fonts\ionicons.woff" />
-    <Content Include="assets\img\building.jpg" />
     <Content Include="assets\img\Coding.png" />
     <Content Include="assets\img\Computers.png" />
-    <Content Include="assets\img\desk.jpg" />
-    <Content Include="assets\img\loft.jpg" />
     <Content Include="assets\img\Parliament.png" />
-    <Content Include="assets\img\sortmdk.png" />
     <Content Include="assets\img\Wharf.png" />
     <Content Include="assets\js\-Filterable-Gallery-with-Lightbox-BS4-.js" />
     <Content Include="assets\js\jquery.min.js" />
@@ -1492,7 +1488,7 @@
     <Content Include="Views\Services.cshtml" />
     <Content Include="Views\Photobase.cshtml" />
     <Content Include="Views\Partials\SiteLayout\_TitleControls.vbhtml" />
-    <Content Include="Views\MenuPage.cshtml" />
+    <None Include="Views\MenuPage.cshtml" />
     <Content Include="Views\_ViewStart.vbhtml" />
     <Content Include="Views\Shared\_Layout.vbhtml" />
     <Content Include="Views\BlogPost.cshtml" />
@@ -1548,6 +1544,8 @@
     <Content Include="Views\MenuPageGallery.cshtml" />
     <Content Include="Views\MenuPageList.cshtml" />
     <Content Include="Views\CodingPage.cshtml" />
+    <Content Include="Views\MenuPagevb.vbhtml" />
+    <Content Include="Views\Partials\Article\_MenuItemsList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,8 +1,7 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-@using System.Web.Optimization;
-@{
-	Layout = null;
-}
+﻿@Imports Umbraco.Web.Mvc.UmbracoTemplatePage
+@Code
+    Layout = Nothing
+End Code
 
 <!DOCTYPE html>
 <html>
@@ -21,20 +20,20 @@
     <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/assets/css/styles.css">
 </head>
-    <body>
-        @RenderSection("ScriptsTop", false)
-        @{ Html.RenderAction("RenderHeader", "SiteLayout"); }
-        @RenderBody()
-        @{ Html.RenderAction("RenderFooter", "SiteLayout"); }
-        <script src="~/assets/js/jquery.min.js"></script>
-        <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
-        @*<script src="~/assets/js/-Filterable-Gallery-with-Lightbox-BS4-.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>*@
-        @RenderSection("ScriptsBottom", false)
-        <!-- MAIN JS -->
-        @*<script src="~/assets/js/main.js"></script>*@
-        <!-- ScriptsEnd JS -->
-        @RenderSection("ScriptsEnd", false)
-    </body>
+<body>
+    @RenderSection("ScriptsTop", False)
+    @Code
+        Html.RenderAction("RenderHeader", "SiteLayout")
+        Html.RenderAction("RenderTitle", "SiteLayout")
+        RenderBody()
+        Html.RenderAction("RenderFooter", "SiteLayout")
+    End Code
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+    @RenderSection("ScriptsBottom", False)
+    <!-- ScriptsEnd JS -->
+    @RenderSection("ScriptsEnd", False)
+</body>
 </html>
-                
+
+

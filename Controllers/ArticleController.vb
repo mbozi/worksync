@@ -34,7 +34,8 @@ Public Class ArticleController
                       .Name = page.GetPropertyValue("title").ToString,
                       .ItemDate = page.GetPropertyValue("articleDate")})
         Next
-        Return PartialView(PARTIAL_VIEW_FOLDER & "_MenuItemsList.vbhtml", model)
+        Dim output As IEnumerable(Of ArticleImageGallery) = model
+        Return PartialView(PARTIAL_VIEW_FOLDER & "_MenuItemsList.cshtml", output)
     End Function
 
     Public Function RenderGallery(FolderName As String) As ActionResult

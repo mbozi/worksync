@@ -1,8 +1,11 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = "MenuPage.cshtml";
+	Layout = "ArtlicleBase.cshtml";
 }
 
 @{ Html.RenderAction("RenderMenuPageList","Article"); }
 
-
+@section ScriptsEnd
+{
+    <script src="/assets/js/table.js"></script>
+}

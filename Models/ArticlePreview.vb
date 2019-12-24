@@ -1,4 +1,6 @@
-﻿Public Class ArticleImageGallery
+﻿Imports System.ComponentModel.DataAnnotations
+Imports System.Web.Mvc
+Public Class ArticleImageGallery
     Public Property Name As String
     Public Property Introduction As String
     Public Property ImageURL As String
