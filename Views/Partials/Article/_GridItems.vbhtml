@@ -6,7 +6,6 @@
 </div>
 
 
-
 @Helper RenderChildItems()
         For Each item As Photo In Model
             @<div Class="portfolio_item">

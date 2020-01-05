@@ -817,6 +817,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\grid_items.css" />
+    <Content Include="css\lightbox.min.css" />
     <Content Include="css\Photography\animate.css" />
     <Content Include="css\Photography\bootstrap.css" />
     <Content Include="css\Photography\icomoon.css" />
@@ -827,6 +828,7 @@
     <Content Include="fonts\icomoon\icomoon.svg" />
     <Content Include="fonts\icomoon\index.html" />
     <Content Include="Global.asax" />
+    <Content Include="images\close.png" />
     <Content Include="images\Coding.png" />
     <Content Include="images\Computers.png" />
     <Content Include="images\image_1.jpg" />
@@ -841,7 +843,9 @@
     <Content Include="images\image_9.jpg" />
     <Content Include="images\image_about.jpg" />
     <Content Include="images\loader.gif" />
+    <Content Include="images\loading.gif" />
     <Content Include="images\loc.png" />
+    <Content Include="images\next.png" />
     <Content Include="images\Parliament.png" />
     <Content Include="images\Photography\001Cardiff\DSC_0001.JPG" />
     <Content Include="images\Photography\001Cardiff\DSC_0002.JPG" />
@@ -1209,9 +1213,11 @@
     <Content Include="images\Photography\004Prague\DSC_0522.JPG" />
     <Content Include="images\Photography\004Prague\DSC_0526.JPG" />
     <Content Include="images\Polls.jpg" />
+    <Content Include="images\prev.png" />
     <Content Include="images\Wharf.png" />
     <Content Include="js\bootstrap\bootstrap.min.js" />
     <Content Include="js\jquery.min.js" />
+    <Content Include="js\lightbox-plus-jquery.min.js" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
     <Content Include="scripts\bootstrap.js" />
