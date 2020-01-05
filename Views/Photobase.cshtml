@@ -25,6 +25,13 @@
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
 
+    <link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/assets/css/Article-List.css">
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/styles.css">
+
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
@@ -37,6 +44,7 @@
     <link rel="stylesheet" href="~/css/Photography/bootstrap.css">
     <!-- Theme style  -->
     <link rel="stylesheet" href="~/css/Photography/style.css">
+
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="~/css/Photography/magnific-popup.css">
 
@@ -51,46 +59,10 @@
 </head>
 <body>
 
+    @{ Html.RenderAction("RenderHeader", "SiteLayout"); }
 
     <div id="fh5co-page">
 
-        <div class="aside-toggle btn-circle">
-            <a href="#"><span></span><em>About</em></a>
-        </div>
-
-
-
-        <div id="fh5co-aside">
-            <div class="image-bg"></div>
-            <div class="overlay"></div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="fh5co-aside-inner">
-                        <div class="row" id="fh5co-bio">
-                            <div class="col-md-12">
-                                <h2>About Me</h2>
-                            </div>
-                            <div class="col-md-6">
-                                <p>Sint, <a href="#">consectetur</a>, fugit. Sed, blanditiis. Autem quae perferendis totam provident, consequuntur inventore reiciendis vitae suscipit rerum repellendus facere voluptatem tenetur iure praesentium corrupti asperiores eos laborum debitis eaque maiores magnam nisi exercitationem sunt maxime! At eligendi deserunt, iusto natus molestias!</p>
-                            </div>
-                            <div class="col-md-6">
-                                <p>Quas praesentium dolore unde delectus, nemo accusantium, qui ab illum debitis assumenda tempore molestias ipsam, eveniet repellendus officiis in vel, explicabo quos necessitatibus atque doloremque. Quae maiores delectus, magnam nam.</p>
-                            </div>
-                            <div class="col-md-12 fh5co-social">
-                                <a href="#"><i class="icon-envelope"></i></a>
-                                <a href="#"><i class="icon-twitter"></i></a>
-                                <a href="#"><i class="icon-linkedin"></i></a>
-                                <a href="#"><i class="icon-instagram"></i></a>
-                                <a href="#"><i class="icon-google-plus"></i></a>
-                            </div>
-                            <div class="col-md-12" style="margin-top: 40px;">
-                                <p>&copy; 2016 Free HTML5 Template. All Rights Reserved. Designed by <a href="http://gettemplates.co/">GetTemplates</a> Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container-fluid" id="fh5co-image-grid">
 
 
@@ -103,6 +75,8 @@
         </div>
 
     </div>
+
+    @{ Html.RenderAction("RenderFooter", "SiteLayout"); }
 
     <!-- jQuery -->
     <script src="~/scripts/jquery.min.js"></script>

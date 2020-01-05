@@ -816,6 +816,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\grid_items.css" />
     <Content Include="css\Photography\animate.css" />
     <Content Include="css\Photography\bootstrap.css" />
     <Content Include="css\Photography\icomoon.css" />
@@ -1488,6 +1489,8 @@
     <Content Include="Views\Services.cshtml" />
     <Content Include="Views\Photobase.cshtml" />
     <Content Include="Views\Partials\SiteLayout\_TitleControls.vbhtml" />
+    <Content Include="Views\ArtlicleBase.cshtml" />
+    <Content Include="Views\ArticleList.cshtml" />
     <None Include="Views\MenuPage.cshtml" />
     <Content Include="Views\_ViewStart.vbhtml" />
     <Content Include="Views\Shared\_Layout.vbhtml" />
@@ -1546,6 +1549,7 @@
     <Content Include="Views\CodingPage.cshtml" />
     <Content Include="Views\MenuPagevb.vbhtml" />
     <Content Include="Views\Partials\Article\_MenuItemsList.cshtml" />
+    <Content Include="Views\Partials\Article\_GridItems.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,21 @@
+﻿@using worksync
+@model List<Photo>
+
+<div class="portfolio">
+    @{ foreach (Photo PItem in Model)
+        {
+            @RenderChildItems(PItem)
+        }
+    }
+</div>
+
+@helper RenderChildItems(Photo item)
+{
+    <div Class="portfolio_item">
+        <img src="@item.PhotoURL" alt="" Class="img-responsive">
+    </div>
+}
+
+
+
+

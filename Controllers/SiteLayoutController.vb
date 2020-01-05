@@ -16,9 +16,6 @@ Public Class SiteLayoutController
         Return PartialView(PARTIAL_VIEW_FOLDER & "_Header.vbhtml", nav)
     End Function
 
-    'Public Function RenderIntro() As ActionResult
-    '    Return PartialView(PARTIAL_VIEW_FOLDER & "_Intro.vbhtml")
-    'End Function
 
     Public Function RenderFooter() As ActionResult
         Return PartialView(PARTIAL_VIEW_FOLDER & "_Footer.vbhtml")

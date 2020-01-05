@@ -1,6 +1,10 @@
 ﻿@using worksync
 @*@Model List(of Photo)*@
 
-@{ Layout = "~/Views/PhotoBase.cshtml"; }
+@{ Layout = "~/Views/WebBase.cshtml"; }
 @{ Html.RenderAction("RenderGallery", "Article"); }
 
+@section StyleSheetPlus
+    {
+    <link rel="stylesheet" href="~/css/grid_items.css">
+}

@@ -40,7 +40,7 @@ Public Class ArticleController
 
     Public Function RenderGallery(FolderName As String) As ActionResult
         Dim model As List(Of Photo) = DLayer.GetPhotoListFromDirectory("~/Images/Photography/" & FolderName)
-        Return PartialView(PARTIAL_VIEW_FOLDER & "_GridItems.vbhtml", model)
+        Return PartialView(PARTIAL_VIEW_FOLDER & "_GridItems.cshtml", model)
     End Function
 
 End Class

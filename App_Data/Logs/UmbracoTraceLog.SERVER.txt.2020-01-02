@@ -1,0 +1,5 @@
+﻿ 2020-01-02 03:21:29,834 [P11660/D3/T103] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-01 03:21:29
+ 2020-01-02 11:28:46,790 [P11660/D3/T163] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-01 11:28:46
+ 2020-01-02 15:28:46,832 [P11660/D3/T280] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-01 15:28:46
+ 2020-01-02 19:28:46,877 [P11660/D3/T144] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-01 19:28:46
+ 2020-01-02 23:28:46,922 [P11660/D3/T117] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-01 23:28:46
