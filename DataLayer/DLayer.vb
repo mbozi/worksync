@@ -5,7 +5,15 @@ Imports System.Web.HttpServerUtility
 Public Class DLayer
 
     Public Shared Function GetPhotoListFromDirectory(PhotoDirectory As String) As List(Of Photo)
-        Dim arrPhoto As IEnumerable(Of String) = Directory.EnumerateFiles(HttpContext.Current.Server.MapPath(PhotoDirectory)).[Select](Function(fn) Path.GetFileName(fn))
+        Dim imgExtensions As New List(Of String)
+        imgExtensions.AddRange({".jpg", ".jpeg", ".bmp", ".gif", ".png"})
+        imgExtensions.AddRange({".JPG", ".JPEG", ".BMP", ".GIF", ".PNG"})
+        Dim arrPhoto As IEnumerable(Of String) = Directory.EnumerateFiles(HttpContext.Current.Server.MapPath(PhotoDirectory)).Select(Function(fn) Path.GetFileName(fn)).Where(Function(s) imgExtensions.Any(Function(x) x = Path.GetExtension(s)))
+
+        'Dim imageFiles = Directory.EnumerateFiles(targetFolder) _
+        '         .Where(Function(s) imgExtensions _
+        '         .Any(Function(x) x = Path.GetExtension(s)))
+
 
         Dim output As New List(Of Photo)
         For Each photo As String In arrPhoto
