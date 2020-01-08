@@ -13,7 +13,7 @@
 .list-containter-inner a {
     display: flex;
     flex-basis: 100%;
-    background: #eeeeee;
+    background: #f3f3f3;
     margin-bottom: 5px;
 }
 
@@ -54,11 +54,11 @@
 .article {
     display: flex;
     border-radius: 15px;
-    box-shadow: 4px 4px 4px rgba(0,52,104,0.35) !important;
-    -webkit-box-shadow: 4px 4px 4px rgba(0,52,104,0.35) !important;
+    box-shadow: 4px 4px 4px rgba(104,104,104,0.35) !important;
+    -webkit-box-shadow: 4px 4px 4px rgba(104,104,104,0.35) !important;
 }
 a.article {
-    color:rgba(0,52,104,0.8);
+    color:rgba(51,51,51,0.7);
 }
 
 .article:hover {
