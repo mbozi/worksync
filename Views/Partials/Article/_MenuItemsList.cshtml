@@ -1,39 +1,30 @@
 ﻿@model System.Collections.Generic.IEnumerable<worksync.ArticleImageGallery>
+<div class="list-containter-outer">
+    <div class="list-containter-inner">
+        @{ foreach (worksync.ArticleImageGallery item in Model.OrderByDescending(x => x.ItemDate))
+            {
+                @RenderArticleItemList(item);
 
-<div class="row">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-0 offset-sm-1 offset-md-2 offset-lg-3 artcont">
-        <table class="table table-condensed table-hover table-striped">
-            <colgroup>
-                <col style="width:50px;">
-                <col style="width:auto;">
-                <col style="width:100px;">
-            </colgroup>
-            @{ foreach (worksync.ArticleImageGallery item in Model.OrderByDescending(x => x.ItemDate))
-                {
-                    @RenderArticleItemList(item);
-
-                }
             }
-        </table>
+        }
     </div>
 </div>
 
 
-
 @helper RenderArticleItemList(worksync.ArticleImageGallery item)
 {
-    <tr class="clickable-row" data-href="@item.LinkURL" style="cursor:pointer">
-        <td>
-            <i class="fas fa-feather d-inline-block" style="margin: 0px;margin-top: 10px;"></i>
-        </td>
-        <td>
-            <div Class="contentcol2" style="width: 400px;">
-                <h5>@item.Name</h5>
-                <h6>@Html.Raw(item.Introduction)</h6>
-            </div>
-        </td>
-        <td>
-            <p Class="text-right d-table-cell" style="font-size: 11px;line-height: 12px;margin: 5px 10px 0px 0px;">@item.ItemDate.ToString("dd MMM yyyy")</p>
-        </td>
-    </tr>
+
+    <a href="@item.LinkURL" class="article">
+        <div class="list-icon">
+            <i class="fas fa-feather" style="margin: auto;"></i>
+        </div>
+        <div class="list-content">
+            <div class="list-content-title">@item.Name</div>
+            <div class="list-content-desc">@item.Introduction</div>
+        </div>
+        <div class="list-date">
+            @item.ItemDate.ToString("dd MMM yyyy")
+        </div>
+
+    </a>
 }

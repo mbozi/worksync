@@ -815,6 +815,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\article_list.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\grid_items.css" />
     <Content Include="css\lightbox.min.css" />
@@ -1549,10 +1550,7 @@
     <Content Include="Views\Partials\Politics\_PollPage.cshtml" />
     <Content Include="Views\PollTable.cshtml" />
     <Content Include="Views\DataTable.cshtml" />
-    <Content Include="Views\Partials\Article\_MenuItemsList.vbhtml" />
     <Content Include="Views\MenuPageGallery.cshtml" />
-    <Content Include="Views\MenuPageList.cshtml" />
-    <Content Include="Views\CodingPage.cshtml" />
     <Content Include="Views\MenuPagevb.vbhtml" />
     <Content Include="Views\Partials\Article\_MenuItemsList.cshtml" />
     <Content Include="Views\Partials\Article\_GridItems.cshtml" />

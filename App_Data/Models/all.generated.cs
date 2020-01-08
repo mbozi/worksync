@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7bbc5963cdeb5244")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f082980e9734a2be")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -66,10 +66,10 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Sub Title: Page subtitle
+		/// subTitle
 		///</summary>
 		[ImplementPropertyType("subTitle")]
-		public IHtmlString SubTitle
+		public string SubTitle
 		{
 			get { return Umbraco.Web.PublishedContentModels.TitleControls.GetSubTitle(this); }
 		}
@@ -154,10 +154,10 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Sub Title: Page subtitle
+		/// subTitle
 		///</summary>
 		[ImplementPropertyType("subTitle")]
-		public IHtmlString SubTitle
+		public string SubTitle
 		{
 			get { return Umbraco.Web.PublishedContentModels.TitleControls.GetSubTitle(this); }
 		}
@@ -288,10 +288,10 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Sub Title: Page subtitle
+		/// subTitle
 		///</summary>
 		[ImplementPropertyType("subTitle")]
-		public IHtmlString SubTitle
+		public string SubTitle
 		{
 			get { return Umbraco.Web.PublishedContentModels.TitleControls.GetSubTitle(this); }
 		}
@@ -319,8 +319,8 @@ namespace Umbraco.Web.PublishedContentModels
 	/// <summary>Title Controls</summary>
 	public partial interface ITitleControls : IPublishedContent
 	{
-		/// <summary>Sub Title</summary>
-		IHtmlString SubTitle { get; }
+		/// <summary>subTitle</summary>
+		string SubTitle { get; }
 
 		/// <summary>Title</summary>
 		string Title { get; }
@@ -352,16 +352,16 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Sub Title: Page subtitle
+		/// subTitle
 		///</summary>
 		[ImplementPropertyType("subTitle")]
-		public IHtmlString SubTitle
+		public string SubTitle
 		{
 			get { return GetSubTitle(this); }
 		}
 
-		/// <summary>Static getter for Sub Title</summary>
-		public static IHtmlString GetSubTitle(ITitleControls that) { return that.GetPropertyValue<IHtmlString>("subTitle"); }
+		/// <summary>Static getter for subTitle</summary>
+		public static string GetSubTitle(ITitleControls that) { return that.GetPropertyValue<string>("subTitle"); }
 
 		///<summary>
 		/// Title: Page Title
@@ -560,10 +560,10 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Sub Title: Page subtitle
+		/// subTitle
 		///</summary>
 		[ImplementPropertyType("subTitle")]
-		public IHtmlString SubTitle
+		public string SubTitle
 		{
 			get { return Umbraco.Web.PublishedContentModels.TitleControls.GetSubTitle(this); }
 		}
