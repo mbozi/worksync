@@ -829,6 +829,7 @@
     <Content Include="fonts\icomoon\icomoon.svg" />
     <Content Include="fonts\icomoon\index.html" />
     <Content Include="Global.asax" />
+    <Content Include="images\ccastle.jpg" />
     <Content Include="images\close.png" />
     <Content Include="images\Coding.png" />
     <Content Include="images\Computers.png" />

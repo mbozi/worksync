@@ -42,7 +42,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <a class="home-grid" href="/Photography/" style="background-image: url(../../../images/Wharf.png);">
+                <a class="home-grid" href="/Photography/" style="background-image: url(../../../images/ccastle.jpg);">
                     <div class="desc">
                         <h3>Photography</h3><span>Photos taken with my Nikon DC3100</span>
                     </div>
