@@ -2,4 +2,13 @@
 @{
 	Layout = "MenuPage.cshtml";
 }
-@{ Html.RenderAction("RenderMenuPageGallery","Article"); }
+@{ Html.RenderAction("RenderMenuPageGallery", "Article"); }
+
+@section StylesheetPlus
+{
+	<link rel="stylesheet" href="~/css/gallery_menu.css">
+}
+
+@section ScriptsEnd
+{
+}

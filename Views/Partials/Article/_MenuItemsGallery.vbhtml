@@ -13,13 +13,9 @@
             <div class="work-inner">
                 <a class="workgrid" href="@item.LinkURL" style="background-image: url('@item.ImageURL');"></a>
                 <div class="desc">
-                    <h3>
-                        <a href="@item.LinkURL">@item.Name</a>
-                    </h3>
-                    <span>
-                        <a>@item.ItemDate.ToString("dd MMM yyyy")</a>
-                        @Html.Raw(item.Introduction)
-                    </span>
+                    <div class="menu-item-title">@item.Name</div>
+                    <div class="menu-item-date">@item.ItemDate.ToString("dd MMM yyyy")</div>
+                    <div class="menu-item-desc">@Html.Raw(item.Introduction)</div>
                 </div>
             </div>
         </div>
