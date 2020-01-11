@@ -590,7 +590,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  padding-top: 4px;
+  /*padding-top: 4px;*/
 }
 
 .no-gutters {
@@ -12463,7 +12463,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #b9a78a;
 }
 
-@media (max-width: 726px) {
+@media (max-width: 768px) {
   .home-grid, .home-grid-2 {
     height: 240px;
     margin-bottom: 30px;
@@ -12480,7 +12480,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 4px;
 }
 
-@media (min-width: 736px) {
+@media (min-width: 768px) {
   .home-grid.home-grid-2 {
     height: 240px;
     margin-bottom: 30px;
@@ -12560,7 +12560,7 @@ home-grid.desc {
   background-color: white;
 }
 
-@media (min-width: 726px) {
+@media (min-width: 768px) {
   .home-grid {
     height: 510px;
   }
