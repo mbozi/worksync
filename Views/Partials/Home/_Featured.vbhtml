@@ -11,9 +11,9 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col">
-                        <a class="home-grid home-grid-2" href="/Programming/" style="background-image: url(../../../images/Coding.png);">
+                        <a class="home-grid home-grid-2" href="/Cardiff/" style="background-image: url(../../..//media/1105/crockherbtownloch.jpg);">
                             <div class="desc">
-                                <h3>Programming</h3><span>Coding Snippets and Resources</span>
+                                <h3>Cardiff</h3><span>Historic Photography</span>
                             </div>
                         </a>
                     </div>
@@ -27,9 +27,9 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="home-grid home-grid-2" href="/Computers/" style="background-image: url(../../../images/Computers.png);">
+                        <a class="home-grid home-grid-2" href="/Programming/" style="background-image: url(../../../images/Coding.png);">
                             <div class="desc">
-                                <h3>Computers</h3><span>IT Resources and Information</span>
+                                <h3>Programming</h3><span>Coding Snippets and Resources</span>
                             </div>
                         </a>
                     </div>
