@@ -817,6 +817,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="css\article_list.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\featured.css" />
     <Content Include="css\gallery_menu.css" />
     <Content Include="css\grid_items.css" />
     <Content Include="css\lightbox.min.css" />

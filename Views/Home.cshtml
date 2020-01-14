@@ -1,14 +1,19 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = "WebBase.cshtml";
+    Layout = "WebBase.cshtml";
 }
-            @{ Html.RenderAction("RenderTitle","SiteLayout"); }
+@{ Html.RenderAction("RenderTitle", "SiteLayout"); }
 
-            @{ Html.RenderAction("RenderFeatured","Home"); }
+@{ Html.RenderAction("RenderFeatured", "Home"); }
 
-            @*@{ Html.RenderAction("RenderServices","Home"); }
+@*@{ Html.RenderAction("RenderServices","Home"); }
 
-            @{ Html.RenderAction("RenderBlog","Home"); }
+    @{ Html.RenderAction("RenderBlog","Home"); }
 
-            @{ Html.RenderAction("RenderClients","Home"); }*@
-                
+    @{ Html.RenderAction("RenderClients","Home"); }*@
+
+
+@section StyleSheetPlus
+    {
+    <link rel="stylesheet" href="~/css/featured.css">
+}

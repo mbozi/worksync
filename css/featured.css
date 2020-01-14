@@ -1,0 +1,37 @@
+﻿.feature-container {
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 1em;
+    margin-left: 1em;
+    flex-direction:column;
+}
+
+
+
+.feature-container .cl {
+        width: 50%;
+        display:flex;
+    }
+
+
+.feature-container .rw {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+@media (max-width: 992px) {
+    .feature-container {
+        max-width: 992px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: column;
+    }
+.feature-container .column {
+            width: 100%;
+            display: flex;
+        }
+}
+
