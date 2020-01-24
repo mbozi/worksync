@@ -1,24 +1,63 @@
 ﻿Imports System.IO
 Imports System.Data.SqlClient
 Imports System.Web.HttpServerUtility
+Imports System.Drawing
 
 Public Class DLayer
 
     Public Shared Function GetPhotoListFromDirectory(PhotoDirectory As String) As List(Of Photo)
+        'Dim imgExtensions As New List(Of String)
+        'imgExtensions.AddRange({".jpg", ".jpeg", ".bmp", ".gif", ".png"})
+        'imgExtensions.AddRange({".JPG", ".JPEG", ".BMP", ".GIF", ".PNG"})
+        'Dim arrPhoto As IEnumerable(Of String) = Directory.EnumerateFiles(HttpContext.Current.Server.MapPath(PhotoDirectory)).Select(Function(fn) Path.GetFileName(fn)).Where(Function(s) imgExtensions.Any(Function(x) x = Path.GetExtension(s)))
+
+        ''Dim imageFiles = Directory.EnumerateFiles(targetFolder) _
+        ''         .Where(Function(s) imgExtensions _
+        ''         .Any(Function(x) x = Path.GetExtension(s)))
+
+
+        'Dim output As New List(Of Photo)
+        'For Each photo As String In arrPhoto
+        '    Dim fullpath As String = PhotoDirectory.Substring(1) & "/" & photo
+        '    output.Add(New Photo With {.PhotoTitle = photo, .PhotoSubTitle = arrPhoto.Count.ToString, .PhotoURL = fullpath, .Orientation = GetOrientation(fullpath)})
+        'Next
+        Dim output As List(Of Photo) = GetPhotosDims(PhotoDirectory)
+        Return output
+    End Function
+
+    Private Shared Function GetPhotosDims(PhotoDirectory As String) As List(Of Photo)
+        Dim output As New List(Of Photo)
+
         Dim imgExtensions As New List(Of String)
         imgExtensions.AddRange({".jpg", ".jpeg", ".bmp", ".gif", ".png"})
         imgExtensions.AddRange({".JPG", ".JPEG", ".BMP", ".GIF", ".PNG"})
         Dim arrPhoto As IEnumerable(Of String) = Directory.EnumerateFiles(HttpContext.Current.Server.MapPath(PhotoDirectory)).Select(Function(fn) Path.GetFileName(fn)).Where(Function(s) imgExtensions.Any(Function(x) x = Path.GetExtension(s)))
+        For Each f As String In arrPhoto
+            Dim fullpath As String = HttpContext.Current.Server.MapPath(PhotoDirectory) & "/" & f
+            Using strm As Stream = File.OpenRead(fullpath)
+                Using si As Image = Image.FromStream(strm, False, False)
+                    Dim orientation As String = "oLand"
+                    If si.Width < si.Height Then orientation = "oPort"
+                    output.Add(New Photo With {
+                               .PhotoTitle = f,
+                               .Orientation = orientation,
+                               .PhotoSubTitle = f,
+                               .PhotoURL = PhotoDirectory.Substring(1) & "/" & f
+                               }
+                               )
+                End Using
+            End Using
 
-        'Dim imageFiles = Directory.EnumerateFiles(targetFolder) _
-        '         .Where(Function(s) imgExtensions _
-        '         .Any(Function(x) x = Path.GetExtension(s)))
-
-
-        Dim output As New List(Of Photo)
-        For Each photo As String In arrPhoto
-            output.Add(New Photo With {.PhotoTitle = photo, .PhotoSubTitle = arrPhoto.Count.ToString, .PhotoURL = PhotoDirectory.Substring(1) & "/" & photo})
         Next
+
+        Return output
+    End Function
+
+    Private Shared Function GetOrientation(filename As String) As String
+        Dim output As String = "L"
+        Dim bm As New Bitmap(filename)
+        Dim pSize As Size = bm.Size
+        If pSize.Height > pSize.Width Then output = "P"
         Return output
     End Function
 

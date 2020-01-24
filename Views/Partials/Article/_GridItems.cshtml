@@ -9,13 +9,14 @@
     }
 </div>
 
-@helper RenderChildItems(Photo item)
+@helper RenderChildItems(Photo mitem)
 {
-    <div Class="portfolio_item">
-        <a href="@item.PhotoURL" data-lightbox="mygallery">
-            <img src="@item.PhotoURL"  Class="img-responsive">
-        </a>
-    </div>
+<div Class="portfolio_item @mitem.Orientation">
+    <a href="@mitem.PhotoURL" data-lightbox="mygallery">
+    <img src="@mitem.PhotoURL"  Class="img-responsive">
+</a>
+
+</div>
 }
 
 
