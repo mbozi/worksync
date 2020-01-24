@@ -1,0 +1,41 @@
+﻿ 2020-01-22 00:06:40,770 [P72776/D3/T181] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-21 00:06:40
+ 2020-01-22 02:54:56,665 [P72776/D3/T33] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type worksync.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2020-01-22 04:06:40,817 [P72776/D3/T280] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-21 04:06:40
+ 2020-01-22 08:06:37,209 [P72776/D3/T386] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-21 08:06:37
+ 2020-01-22 12:06:37,250 [P72776/D3/T562] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-21 12:06:37
+ 2020-01-22 16:06:37,297 [P72776/D3/T560] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-01-21 16:06:37
+ 2020-01-22 16:52:06,550 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2020-01-22 16:52:06,551 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2020-01-22 16:52:06,554 [P72776/D3/T35] INFO  Umbraco.Core.MainDom - Stopping...
+ 2020-01-22 16:52:06,556 [P72776/D3/T397] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2020-01-22 16:52:06,557 [P72776/D3/T35] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2020-01-22 16:52:06,563 [P72776/D3/T35] INFO  Umbraco.Web.ExamineStartup - Complete (took 5ms)
+ 2020-01-22 16:52:06,563 [P72776/D3/T35] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2020-01-22 16:52:06,563 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2020-01-22 16:52:06,564 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2020-01-22 16:52:06,564 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2020-01-22 16:52:06,564 [P72776/D3/T451] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2020-01-22 16:52:06,564 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2020-01-22 16:52:06,564 [P72776/D3/T451] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2020-01-22 16:52:06,565 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2020-01-22 16:52:06,565 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2020-01-22 16:52:06,565 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2020-01-22 16:52:06,565 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2020-01-22 16:52:06,565 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2020-01-22 16:52:06,565 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2020-01-22 16:52:06,566 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2020-01-22 16:52:06,565 [P72776/D3/T413] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2020-01-22 16:52:06,565 [P72776/D3/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2020-01-22 16:52:06,569 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2020-01-22 16:52:06,569 [P72776/D3/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2020-01-22 16:52:06,569 [P72776/D3/T332] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2020-01-22 16:52:06,574 [P72776/D3/T332] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.Hosting.PipelineRuntime.StopProcessing()

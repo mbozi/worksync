@@ -2,18 +2,35 @@
 @ModelType worksync.NavigationParameter
 
 
-    <header>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top border-info shadow">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="font-size: 14pt;">worksync.net</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><i class="fas fa-bars"></i></button>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        @RenderChildItems(Model.PageList)
-                    </ul>
-                </div>
+<header>
+    <nav class="nbar fixed-top shadow">
+        <div class="nbar-container">
+            <a class="nbar-brand" href="http://worksync.net">worksync.net</a>
+            <button data-toggle="collapse" class="nbar-toggler" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nbar-collapse collapse show" id="navcol-1">
+                <ul class="nbar-items">
+                    @RenderChildItems(Model.PageList)
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+
+@*<header>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top border-info shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 14pt;">worksync.net</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    @RenderChildItems(Model.PageList)
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>*@
 
 @Helper RenderChildItems(listitems As IEnumerable(Of worksync.NavigationListItem))
     If listitems IsNot Nothing Then
@@ -31,10 +48,10 @@
                     'If item.HasChildren Then T1 &= "fh5co-Sub-ddown"
                 End If
                 'Dim Tag1 As String = String.Format("<li><a href=""{0}"" Class=""{1}"" Target=""{2}"">{3}</a></li>", T0, T1, T2, T3)
-                Dim Tag As String = String.Format("<li class=""nav-item"" role=""presentation""><a class=""nav-link{1}"" href=""{0}"" Target=""{2}"">{3}</a></li>", T0, T1, T2, T3)
+                Dim Tag As String = String.Format("<li class=""nbar-item"" role=""presentation""><a class=""nbar-link{1}"" href=""{0}"" Target=""{2}"">{3}</a></li>", T0, T1, T2, T3)
                 @Html.Raw(Tag) End If
         Next
-        @Html.Raw(String.Format("<li class=""nav-item"" role=""presentation""><a class=""nav-link{1}"" href=""{0}"" Target=""{2}"">{3}</a></li>", "/Umbraco/", "", "_blank", "Login"))
+        @Html.Raw(String.Format("<li class=""nbar-item"" role=""presentation""><a class=""nbar-link{1}"" href=""{0}"" Target=""{2}"">{3}</a></li>", "/Umbraco/", "", "_blank", "Login"))
     End If
 
 End Helper

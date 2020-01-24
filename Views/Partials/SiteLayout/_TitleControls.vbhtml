@@ -11,11 +11,6 @@
 </div>*@
 
 <div class="pagetitle">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2>@Umbraco.AssignedContentItem.GetPropertyValue("title")</h2><span style="font-size: 17px;">@Umbraco.AssignedContentItem.GetPropertyValue("subTitle")</span>
-            </div>
-        </div>
-    </div>
+    <div class="pHeader">@Umbraco.AssignedContentItem.GetPropertyValue("title")</div>
+    <div class="pDesc">@Umbraco.AssignedContentItem.GetPropertyValue("subTitle") </div>
 </div>

@@ -1,0 +1,295 @@
+﻿body {
+    margin: 0;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3E3F3A;
+    text-align: left;
+    background-color: #fff;
+    line-height: 1.7;
+    color: #7f7f7f;
+}
+
+a {
+    color: #93C54B;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.nbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: white;
+    padding: .5rem 1rem;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+.nbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    display:none;
+}
+
+@media (max-width: 799.98px) {
+    .nbar-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: white;
+}
+    .nbar-toggler{
+        display:block;
+    }
+
+    .pagetitle {
+        padding-top: 5em;
+        padding-bottom: 1em;
+    }
+}
+
+@media (min-width: 800px) {
+    .coll {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        border-radius: 15px;
+    }
+
+    .nbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+
+    .nbar-items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin-left: auto !important;
+        margin-top:auto;
+    }
+
+    .nbar-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    }
+
+    .nbar-toggler{
+        display:none;
+    }
+
+    .pagetitle {
+        padding-top: 9em;
+        padding-bottom: 4em;
+    }
+}
+
+
+.nbar-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    padding: 0.25rem 0.75rem;
+    font-size: 1.09375rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+}
+
+.nbar-brand {
+    display: inline-block;
+    padding-top: 0.3359375rem;
+    padding-bottom: 0.3359375rem;
+    margin-right: 1rem;
+    font-size: 1.09375rem;
+    line-height: inherit;
+    white-space: nowrap;
+    font-size: 14pt;
+}
+
+.nbar-item {
+    background-color: white;
+    /*padding-left: 15px;*/
+}
+.nbar-link {
+    color: rgba(0,0,0,0.5);
+    padding-left: 15px;
+    font-size: 12PX;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.09375rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+}
+
+.collapse:matches(.show) {
+    display: block;
+}
+
+.collapse:not(.show) {
+    display: block;
+}
+
+.footr {
+    padding-top: 0px;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    width: -webkit-fill-available;
+    -webkit-box-shadow: 0 -0.5rem 1rem rgba(0,0,0,0.15) !important;
+    box-shadow: 0 -0.5rem 1rem rgba(0,0,0,0.15) !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+}
+
+.fcentre a {
+    text-align:center;
+    display:block;
+    width:100%;
+    color:rgba(0,0,0,0.8);
+}
+
+.pHeader {
+    font-weight: 500;
+    font-size: 3em;
+    font-family: "Playfair Display", Arial, serif;
+    letter-spacing: 0em;
+    line-height: 1.6em;
+    text-align:center;
+}
+
+
+.pDesc {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.fas.fa-feather {
+    font-size: 36px;
+}
+
+.bpContainer {
+    margin-bottom: 100px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre {
+    display: block;
+    font-size:1.1em;
+    color: #202020;
+    background-color: #DDDDDD;
+    border-radius: 15px;
+    padding: 10px;
+}

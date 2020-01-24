@@ -4,9 +4,8 @@
 }
 
 @* the fun starts here *@
-	<div id="fh5co-about-section" style="margin-bottom:100px;">
-		<div class="container about-inner">
+	<div class="bpContainer">
+		
 		    @{Html.RenderAction("RenderTitle","SiteLayout");}
 		    @CurrentPage.GetGridHtml("contentGrid","bootstrap3")
-	    </div>
-	</div>
+    </div>
