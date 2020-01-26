@@ -1,13 +1,14 @@
 ﻿.feat-grid {
     max-width: 1024px;
     display: grid;
-    grid-auto-rows: 240px;
+    grid-auto-rows: minmax(240px, 1fr);
     grid-auto-flow: row;
     list-style-type: none;
     margin: auto;
     padding-inline-start: 0px;
     grid-gap: 1.4em 1.4em;
     margin-bottom:32px;
+    
 }
 
 .glink {
@@ -19,8 +20,8 @@
     background-position: center center;
     float: left;
     cursor: pointer;
-    box-shadow: 4px 4px 4px rgba(104,104,104,0.35) !important;
-    -webkit-box-shadow: 4px 4px 4px rgba(104,104,104,0.35) !important;
+    /*box-shadow: 4px 4px 4px rgba(104,104,104,0.35) !important;
+    -webkit-box-shadow: 4px 4px 4px rgba(104,104,104,0.35) !important;*/
 }
 
 li {
@@ -33,8 +34,13 @@ li {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-gap: 1.5em 1.5em;
-        grid-auto-rows: 240px;
+        grid-auto-rows: minmax(240px, 1fr);
         grid-auto-flow: row;
+        border-top-left-radius: 1024px;
+        border-top-right-radius: 1024px;
+        overflow: hidden;
+        /*box-shadow: 4px 4px 4px rgba(104,104,104,0.35) !important;
+        -webkit-box-shadow: 4px 4px 4px rgba(104,104,104,0.35) !important;*/
     }
     li:nth-child(1) {
         grid-row: span 2;
