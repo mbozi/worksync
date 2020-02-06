@@ -11,7 +11,7 @@
     color: #7f7f7f;
 }
 
-a {
+.nbar-brand {
     color: #93C54B;
     text-decoration: none;
     background-color: transparent;
@@ -44,10 +44,8 @@ ul {
 }
 
 .nbar-collapse {
-    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
     flex-grow: 1;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -98,7 +96,6 @@ ul {
         display: -webkit-box !important;
         display: -ms-flexbox !important;
         display: flex !important;
-        -ms-flex-preferred-size: auto;
         flex-basis: auto;
     }
 
@@ -209,7 +206,6 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 .nbar-item {
     background-color: white;
-    /*padding-left: 15px;*/
 }
 .nbar-link {
     color: rgba(0,0,0,0.5);
@@ -218,6 +214,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
     line-height: 22px;
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .nbar-toggler {
@@ -244,7 +241,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
     position: fixed;
     bottom: 0;
     z-index: 9;
-    width: -webkit-fill-available;
+    width: 100%;
     -webkit-box-shadow: 0 -0.5rem 1rem rgba(0,0,0,0.15) !important;
     box-shadow: 0 -0.5rem 1rem rgba(0,0,0,0.15) !important;
     border-top-left-radius: 15px;

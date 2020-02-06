@@ -10,10 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>worksync</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="~/assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="~/assets/css/Article-List.css">
+     @*<link rel="stylesheet" href="~/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/assets/css/Article-List.css">*@
     @*<link rel="stylesheet" href="~/assets/css/bootstrap.min.css">*@
     <link rel="stylesheet" href="~/css/navbar.css">
     @RenderSection("StyleSheetPlus", false)
@@ -23,8 +23,8 @@
         @{ Html.RenderAction("RenderHeader", "SiteLayout"); }
         @RenderBody()
         @{ Html.RenderAction("RenderFooter", "SiteLayout"); }
-        <script src="~/assets/js/jquery.min.js"></script>
-        <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+        @*<script src="~/assets/js/jquery.min.js"></script>
+        <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>*@
         @*<script src="~/assets/js/-Filterable-Gallery-with-Lightbox-BS4-.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>*@
         @RenderSection("ScriptsBottom", false)

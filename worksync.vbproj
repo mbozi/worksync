@@ -817,10 +817,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="css\article_list.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\materialise\carousel.css" />
+    <Content Include="css\featured - Copy.css" />
     <Content Include="css\featured.css" />
     <Content Include="css\gallery_menu.css" />
     <Content Include="css\grid_items.css" />
     <Content Include="css\lightbox.min.css" />
+    <Content Include="css\materialise\materialize.css" />
     <Content Include="css\navbar.css" />
     <Content Include="css\Photography\animate.css" />
     <Content Include="css\Photography\bootstrap.css" />
@@ -836,6 +839,7 @@
     <Content Include="images\close.png" />
     <Content Include="images\Coding.png" />
     <Content Include="images\Computers.png" />
+    <Content Include="images\CrockherbtownLoch.jpg" />
     <Content Include="images\image_1.jpg" />
     <Content Include="images\image_10.jpg" />
     <Content Include="images\image_2.jpg" />
@@ -2201,6 +2205,9 @@
     <Content Include="scripts\jquery.waypoints.min.js" />
     <Content Include="scripts\magnific-popup-options.js" />
     <Content Include="scripts\main.js" />
+    <Content Include="scripts\materialise\init.js" />
+    <Content Include="scripts\materialise\materialize.js" />
+    <Content Include="scripts\materialise\materialize.min.js" />
     <Content Include="scripts\modernizr-2.6.2.min.js" />
     <Content Include="scripts\modernizr-2.8.3.js" />
     <Content Include="scripts\polling\polling.js" />
