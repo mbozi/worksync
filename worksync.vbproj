@@ -817,19 +817,20 @@
     <Content Include="Content\Site.css" />
     <Content Include="css\article_list.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\carousel.css" />
     <Content Include="css\materialise\carousel.css" />
-    <Content Include="css\featured - Copy.css" />
     <Content Include="css\featured.css" />
-    <Content Include="css\gallery_menu.css" />
     <Content Include="css\grid_items.css" />
     <Content Include="css\lightbox.min.css" />
     <Content Include="css\materialise\materialize.css" />
+    <Content Include="css\menu-article-gallery.css" />
     <Content Include="css\navbar.css" />
     <Content Include="css\Photography\animate.css" />
     <Content Include="css\Photography\bootstrap.css" />
     <Content Include="css\Photography\icomoon.css" />
     <Content Include="css\Photography\magnific-popup.css" />
     <Content Include="css\Photography\style.css" />
+    <Content Include="css\site.css" />
     <Content Include="css\styles.css" />
     <Content Include="default.aspx" />
     <Content Include="fonts\icomoon\icomoon.svg" />
@@ -840,6 +841,7 @@
     <Content Include="images\Coding.png" />
     <Content Include="images\Computers.png" />
     <Content Include="images\CrockherbtownLoch.jpg" />
+    <Content Include="images\marble.jpg" />
     <Content Include="images\image_1.jpg" />
     <Content Include="images\image_10.jpg" />
     <Content Include="images\image_2.jpg" />
@@ -2189,6 +2191,7 @@
     <Content Include="fonts\icomoon\icomoon.ttf" />
     <Content Include="fonts\icomoon\icomoon.woff" />
     <None Include="scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="scripts\carousel.js" />
     <Content Include="scripts\isotope.pkgd.min.js" />
     <Content Include="scripts\jquery-3.3.1.js" />
     <Content Include="scripts\jquery-3.3.1.min.js" />
@@ -2335,8 +2338,8 @@
     <Content Include="Views\Partials\SiteLayout\_Intro.vbhtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\WebBase.cshtml" />
-    <Content Include="Views\Contact.cshtml" />
-    <Content Include="Views\Content.cshtml" />
+    <Content Include="Views\zzzContact.cshtml" />
+    <Content Include="Views\zzzContent.cshtml" />
     <Content Include="Views\Services.cshtml" />
     <Content Include="Views\Photobase.cshtml" />
     <Content Include="Views\Partials\SiteLayout\_TitleControls.vbhtml" />
@@ -2398,6 +2401,8 @@
     <Content Include="Views\MenuPagevb.vbhtml" />
     <Content Include="Views\Partials\Article\_MenuItemsList.cshtml" />
     <Content Include="Views\Partials\Article\_GridItems.cshtml" />
+    <Content Include="Views\Partials\Home\_Featured - Copy.vbhtml" />
+    <Content Include="Views\Partials\Article\_MenuItemsGallery - Copy.vbhtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

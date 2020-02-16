@@ -15,14 +15,17 @@
 
 @section StyleSheetPlus
     {
-    <link rel="stylesheet" href="~/css/featured.css">
-    <link href="~/css/materialise/materialize.css" rel="stylesheet" />
-    <link href="~/css/materialise/carousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/featured.css" />
     <link href="~/css/navbar.css" rel="stylesheet" />
+    <link href="~/css/carousel.css" rel="stylesheet" />
+
 }
 
 @section ScriptsEnd
     {
-    <script src="~/scripts/materialise/materialize.min.js"></script>
-    <script src="~/scripts/materialise/init.js"></script>
+    <script src="~/scripts/jquery-3.3.1.js"></script>
+    <script src="~/scripts/carousel.js"></script>
+    <script>
+        $('.carousel').hiSlide();
+    </script>
 }

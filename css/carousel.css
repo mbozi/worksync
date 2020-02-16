@@ -1,0 +1,23 @@
+﻿.carousel {
+    height: 750px;
+    position: relative;
+    perspective: 600px;
+    width: 1024px;
+}
+
+    .carousel .carousel-item {
+        width: 0px;
+        height: 0px;
+        margin: 0;
+        object-fit: cover;
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        border-radius:20px;
+    }
+
+        .carousel .carousel-item img {
+            object-fit: fill;
+            width: 100%;
+            min-height:100%;
+        }

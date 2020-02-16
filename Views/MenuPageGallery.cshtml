@@ -6,9 +6,12 @@
 
 @section StylesheetPlus
 {
-	<link rel="stylesheet" href="~/css/gallery_menu.css">
+	<link rel="stylesheet" href="~/css/menu-article-gallery.css">
 }
 
 @section ScriptsEnd
 {
+	<script type="text/javascript">
+        jQuery(document).ready(function ($) { $(".article-menu-item").click(function () { window.open($(this).data("href")); }); });
+	</script>
 }
