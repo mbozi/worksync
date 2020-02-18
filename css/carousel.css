@@ -5,7 +5,7 @@
     width: 1024px;
 }
 
-    .carousel .carousel-item {
+    .carousel .carousel-item, .size1, .size2, .size3, .size4 {
         width: 0px;
         height: 0px;
         margin: 0;
@@ -21,3 +21,41 @@
             width: 100%;
             min-height:100%;
         }
+
+
+
+
+
+.size1 {
+    z-index: 4;
+    width: 400px;
+    height: 400px;
+    top: 100px;
+    left: 435px;
+    opacity: 1.0;
+}
+
+.size2 {
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+    top: 80px;
+    left: 415px;
+    opacity: 1.0;
+}
+.size3 {
+    z-index: 2;
+    width: 200px;
+    height:200px;
+    top: 60px;
+    left: 395px;
+    opacity: 1.0;
+}
+.size4 {
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    left: 375px;
+    opacity: 1.0;
+}

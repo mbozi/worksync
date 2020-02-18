@@ -9,7 +9,23 @@
 
         $.extend(true, setting, options);
 
-        var states = ['size1', 'size2', 'size3', 'size4'];
+        var states = [
+            //{ $zIndex: 1, width: 240, height: 200, top: 69, left: 500, $opacity: 0.2 },
+            //{ $zIndex: 2, width: 260, height: 300, top: 59, left: 0, $opacity: 0.4 },
+            //{ $zIndex: 3, width: 300, height: 300, top: 35, left: 0, $opacity: 0.7 },
+            //{ $zIndex: 2, width: 200, height: 200, top: 59, left: 500, $opacity: 0.2 },
+            //{ $zIndex: 3, width: 300, height: 300, top: 35, left: 700, $opacity: 0.7 },
+            
+            //{ $zIndex: 4, width: 400, height: 400, top: 0, left: 300, $opacity: 1 }
+            //{ $zIndex: 1, width: 240, height: 200, top: 69, left: 800, $opacity: 0.2 }
+            { $zIndex: 4, width: 400, height: 400, top: 100, left: 435, $opacity: 1.0 },
+            { $zIndex: 3, width: 300, height: 300, top: 80, left: 415, $opacity: 0.9 },
+            { $zIndex: 2, width: 200, height: 200, top: 60, left: 395, $opacity: 0.9 },
+            { $zIndex: 1, width: 100, height: 100, top:40, left: 375, $opacity: 0.9 }
+            
+            
+            
+        ];
 
         var $lis = $ele.find('.carousel-item');
         var timer = null;
@@ -35,8 +51,7 @@
         function move() {
             $lis.each(function (index, element) {
                 var state = states[index];
-                $(element).stop(true, false).switchClass($(element).attr("class"), state, 1000);
-                //$(element).stop(true, false).animate(setting.speed).addClass(state, setting.interval);
+                $(element).css('zIndex', state.$zIndex).finish().animate(state, setting.speed).find('div').css('opacity', state.$opacity);
             });
         }
 

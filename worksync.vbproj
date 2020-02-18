@@ -2062,16 +2062,10 @@
     <Content Include="Media\1107\cands001.jpg" />
     <Content Include="Media\1108\cands002.jpg" />
     <Content Include="Media\1109\crockhertownloch001.jpg" />
-    <Content Include="scripts\bootstrap.bundle.js" />
-    <Content Include="scripts\bootstrap.bundle.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\carousel - Copy.js" />
     <Content Include="scripts\CSSPlugin.min.js" />
-    <Content Include="scripts\EasePack.min.js" />
-    <Content Include="scripts\esm\popper-utils.js" />
-    <Content Include="scripts\esm\popper-utils.min.js" />
-    <Content Include="scripts\esm\popper.js" />
-    <Content Include="scripts\esm\popper.min.js" />
     <Content Include="scripts\google_map.js" />
     <Content Include="scripts\imagesloaded.pkgd.min.js" />
     <Content Include="scripts\index.html" />
@@ -2192,7 +2186,6 @@
     <Content Include="fonts\icomoon\icomoon.woff" />
     <None Include="scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="scripts\carousel.js" />
-    <Content Include="scripts\isotope.pkgd.min.js" />
     <Content Include="scripts\jquery-3.3.1.js" />
     <Content Include="scripts\jquery-3.3.1.min.js" />
     <Content Include="scripts\jquery-3.3.1.slim.js" />
@@ -2202,8 +2195,7 @@
     <Content Include="scripts\jquery-3.4.1.min.js" />
     <Content Include="scripts\jquery-3.4.1.slim.js" />
     <Content Include="scripts\jquery-3.4.1.slim.min.js" />
-    <Content Include="scripts\jquery.easing.1.3.js" />
-    <Content Include="scripts\jquery.magnific-popup.min.js" />
+    <Content Include="scripts\jquery-ui.min.js" />
     <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\jquery.waypoints.min.js" />
     <Content Include="scripts\magnific-popup-options.js" />
@@ -2214,16 +2206,8 @@
     <Content Include="scripts\modernizr-2.6.2.min.js" />
     <Content Include="scripts\modernizr-2.8.3.js" />
     <Content Include="scripts\polling\polling.js" />
-    <Content Include="scripts\popper-utils.js" />
-    <Content Include="scripts\popper-utils.min.js" />
-    <Content Include="scripts\popper.js" />
-    <Content Include="scripts\popper.min.js" />
-    <Content Include="scripts\respond.min.js" />
-    <Content Include="scripts\TweenLite.min.js" />
-    <Content Include="scripts\umd\popper-utils.js" />
-    <Content Include="scripts\umd\popper-utils.min.js" />
-    <Content Include="scripts\umd\popper.js" />
-    <Content Include="scripts\umd\popper.min.js" />
+    <Content Include="scripts\zzzrespond.min.js" />
+    <Content Include="scripts\zzzTweenLite.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2308,27 +2292,12 @@
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
-    <Content Include="scripts\bootstrap.bundle.js.map" />
-    <Content Include="scripts\bootstrap.bundle.min.js.map" />
     <Content Include="scripts\bootstrap.js.map" />
     <Content Include="scripts\bootstrap.min.js.map" />
-    <Content Include="scripts\esm\popper-utils.js.map" />
-    <Content Include="scripts\esm\popper-utils.min.js.map" />
-    <Content Include="scripts\esm\popper.js.map" />
-    <Content Include="scripts\esm\popper.min.js.map" />
     <Content Include="scripts\jquery-3.3.1.min.map" />
     <Content Include="scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="scripts\jquery-3.4.1.min.map" />
     <Content Include="scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="scripts\popper-utils.js.map" />
-    <Content Include="scripts\popper-utils.min.js.map" />
-    <Content Include="scripts\popper.js.map" />
-    <Content Include="scripts\popper.min.js.map" />
-    <Content Include="scripts\README.md" />
-    <Content Include="scripts\umd\popper-utils.js.map" />
-    <Content Include="scripts\umd\popper-utils.min.js.map" />
-    <Content Include="scripts\umd\popper.js.map" />
-    <Content Include="scripts\umd\popper.min.js.map" />
     <Content Include="Views\Partials\Home\_Blog.vbhtml" />
     <Content Include="Views\Partials\Home\_Clients.vbhtml" />
     <Content Include="Views\Partials\Home\_Featured.vbhtml" />
@@ -2402,7 +2371,6 @@
     <Content Include="Views\Partials\Article\_MenuItemsList.cshtml" />
     <Content Include="Views\Partials\Article\_GridItems.cshtml" />
     <Content Include="Views\Partials\Home\_Featured - Copy.vbhtml" />
-    <Content Include="Views\Partials\Article\_MenuItemsGallery - Copy.vbhtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

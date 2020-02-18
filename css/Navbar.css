@@ -8,7 +8,7 @@
     --footer-shadow: 0 -0.5rem 1rem rgba(0,0,0,0.55) !important;
     --link-colour: #a0f0c0;
     /*--link-colour: #93C54B;*/
-    --text-colour: #d08080;
+    --text-colour: rgba(0,0,0,.7);
     --header-text-colour: #a0f0c0;
     --nbar-text-colour: rgba(240, 230, 190, 1.0);
     --nbar-link-hover: white;
@@ -32,6 +32,16 @@ body {
     color: var(--text-colour);
     box-sizing: border-box;
 }
+
+a {
+    text-decoration:none;
+    font-weight:600;
+    color:inherit;
+}
+
+    a:hover {
+        color: var(--link-colour)
+    }
 
 .nbar-brand {
     color: var(--nbar-text-colour);
@@ -291,6 +301,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
     line-height: 1.6em;
     text-align: center;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    color: #336600;
 }
 
 
@@ -298,6 +309,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
     font-size: 1.3em;
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    color: #336600;
 }
 
 .fas.fa-feather {
