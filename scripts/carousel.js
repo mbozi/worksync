@@ -5,7 +5,7 @@
         speed: 1000,
         interval: 4000
     }
-    alert($('div').find('.carousel-item').css("width"));
+    //alert($('div').find('.carousel-item').css("width"));
     settings.itemWidth = parseInt($('div').find('.carousel-item').css("width"));
     $('div').find('.mprev').on('click', function () {
             slide(-1);
