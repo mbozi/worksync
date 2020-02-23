@@ -108,19 +108,7 @@
     font-size: 1.4em;
 }
 
-.desc {
-    position: absolute;
-    bottom: 0px;
-    padding: 24px;
-    z-index: 9;
-    float: left;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-}
 
-    .desc div {
-        color:white;
-    }
 
 
 

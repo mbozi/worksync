@@ -1,61 +1,98 @@
-﻿.carousel {
-    height: 750px;
-    position: relative;
-    perspective: 600px;
-    width: 1024px;
+﻿:root {
+    --window-width: 45vw;
+    --window-height: 50vh;
 }
 
-    .carousel .carousel-item, .size1, .size2, .size3, .size4 {
-        width: 0px;
-        height: 0px;
-        margin: 0;
-        object-fit: cover;
-        overflow: hidden;
-        position: absolute;
-        z-index: 0;
-        border-radius:20px;
+
+.carousel-window {
+    position: relative;
+    height: var(--window-height);
+    width: var(--window-width);
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.carousel {
+    float:left;
+    top:0;
+    left:0px;
+    z-index:0;
+    max-height:var(--window-height);
+    display: grid;
+    grid-template-columns: repeat(var(--window-width));
+    grid-auto-rows:auto;
+    grid-auto-flow:column;
+    grid-gap: 0em 0em;
+    position:relative;
+}
+
+    .carousel .carousel-item {
+        grid-column: span 1;
+        grid-row: span 1;
+        min-width:var(--window-width);
+        max-height:var(--window-height);
+        overflow:hidden;
     }
 
         .carousel .carousel-item img {
-            object-fit: fill;
+            display: block;
             width: 100%;
-            min-height:100%;
+            max-width: 100%;
+            height: var(--window-height);
+            min-height: var(--window-height);
+            object-fit: cover;
         }
 
-
-
-
-
-.size1 {
-    z-index: 4;
-    width: 400px;
-    height: 400px;
-    top: 100px;
-    left: 435px;
-    opacity: 1.0;
+.desc {
+    position: relative;
+    padding: 24px;
+    z-index: 9;
+    float: right;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
 }
 
-.size2 {
-    z-index: 3;
-    width: 300px;
-    height: 300px;
-    top: 80px;
-    left: 415px;
-    opacity: 1.0;
+.desc div {
+    color: white;
 }
-.size3 {
-    z-index: 2;
-    width: 200px;
-    height:200px;
-    top: 60px;
-    left: 395px;
-    opacity: 1.0;
+
+.mwrap {
+
 }
-.size4 {
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    top: 40px;
-    left: 375px;
-    opacity: 1.0;
+
+.movement {
+    display:block;
+    float:left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.mmpart {
+    display: block;
+    left: 0;
+    float: left;
+    background: url(../images/prev.png) left 48% no-repeat;
+    filter: alpha(Opacity=1);
+    opacity: 1;
+    -webkit-transition: opacity .6s;
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    transition: opacity .6s;
+    position: absolute;
+}
+
+.mprev {
+    background: url(../images/prev.png) left 48% no-repeat;
+}
+.mnext {
+    background: url(../images/next.png) right 48% no-repeat;
+}
+
