@@ -3,8 +3,8 @@
     <div class="mpart mnext"><img src="~/images/next.png" /></div>
     <div class="carousel-window">
         <div class="carousel">
-            <div class="carousel-item">
-                <div class="item-wrapper" href="/Photography/">
+            <div class="carousel-item" data-href="/Photography/">
+                <div class="item-wrapper">
                     <img src="~/images/ccastle.jpg" />
                     <div class="desc">
                         <div class="menu-item-title">Photography</div>
@@ -12,8 +12,8 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="item-wrapper" href="/Cardiff/">
+            <div class="carousel-item" data-href="/Cardiff/">
+                <div class="item-wrapper" >
                     <img src="~/images/crockherbtownloch.jpg" />
                     <div class="desc">
                         <div class="menu-item-title">Cardiff</div>
@@ -21,8 +21,8 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="item-wrapper" href="/Programming/">
+            <div class="carousel-item" data-href="/Programming/">
+                <div class="item-wrapper">
                     <img src="~/images/Coding.png" />
                     <div class="desc">
                         <div class="menu-item-title">Programming</div>
@@ -30,8 +30,8 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="item-wrapper" href="/Photography/">
+            <div class="carousel-item" data-href="/Politics/">
+                <div class="item-wrapper">
                     <img src="~/images/Parliament.png" />
                     <div class="desc">
                         <div class="menu-item-title">Politics</div>

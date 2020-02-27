@@ -40,6 +40,7 @@
         min-width:var(--window-width);
         max-height:var(--window-height);
         overflow:hidden;
+        cursor:pointer;
     }
 
         .carousel .carousel-item img {
@@ -122,4 +123,8 @@
 .mnext img {
     margin-left: 13px;
     margin-top: 2px;
+}
+
+.mpart:hover {
+    background-color: rgba(0,0,0,0.7);
 }
