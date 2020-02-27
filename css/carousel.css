@@ -4,14 +4,20 @@
 }
 
 
-.carousel-window {
+.carousel-utility {
     position: relative;
     height: var(--window-height);
     width: var(--window-width);
-    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+    box-shadow: var(--header-shadow);
+}
+
+.carousel-window {
+    overflow: hidden;
+    height: var(--window-height);
+    width: var(--window-width);
 }
 
 .carousel {
@@ -59,11 +65,8 @@
     color: white;
 }
 
-.mwrap {
 
-}
-
-.movement {
+/*.movement {
     display:block;
     float:left;
     top: 0;
@@ -74,10 +77,22 @@
     z-index: 20;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}*/
+
+.mpart {
+    display: block;
+    position: absolute;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(240, 230, 190, 0.2);
+    z-index: 100;
+    top: calc(25vh - 25px);
+    cursor:pointer;
 }
 
-.mmpart {
-    display: block;
+    /*display: block;
     left: 0;
     float: left;
     background: url(../images/prev.png) left 48% no-repeat;
@@ -87,13 +102,24 @@
     -moz-transition: opacity .6s;
     -o-transition: opacity .6s;
     transition: opacity .6s;
-    position: absolute;
-}
+    position: absolute;*/
+
 
 .mprev {
-    background: url(../images/prev.png) left 48% no-repeat;
+    /*background: url(../images/prev.png) left 48% no-repeat;*/
+    left:-25px;
 }
 .mnext {
-    background: url(../images/next.png) right 48% no-repeat;
+    /*background: url(../images/next.png) right 48% no-repeat;*/
+    left: calc(45vw - 25px);
 }
 
+.mprev img {
+    margin-left: -14px;
+    margin-top: 2px;
+}
+
+.mnext img {
+    margin-left: 13px;
+    margin-top: 2px;
+}
