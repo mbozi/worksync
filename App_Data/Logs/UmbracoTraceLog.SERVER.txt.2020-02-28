@@ -1,0 +1,4 @@
+﻿ 2020-02-28 00:54:28,418 [P24684/D3/T262] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-02-27 00:54:28
+ 2020-02-28 12:15:57,164 [P24684/D3/T78] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-02-27 12:15:57
+ 2020-02-28 16:15:57,207 [P24684/D3/T179] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-02-27 16:15:57
+ 2020-02-28 20:15:57,243 [P24684/D3/T392] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-02-27 20:15:57
