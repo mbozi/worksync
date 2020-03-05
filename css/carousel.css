@@ -92,7 +92,7 @@
     border-radius: 50px;
     background-color: rgba(240, 230, 190, 0.2);
     z-index: 100;
-    top: calc(40vh - 25px);
+    top: calc(30vh - 25px);
     cursor:pointer;
 }
 
@@ -115,7 +115,7 @@
 }
 .mnext {
     /*background: url(../images/next.png) right 48% no-repeat;*/
-    left: calc(80vw - 25px);
+    left: calc(60vw - 25px);
 }
 
 .mprev img {
