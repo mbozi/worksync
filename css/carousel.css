@@ -1,7 +1,7 @@
 ﻿:root {
-    --window-width: 80vw;
+    --window-width: 60vw;
     --window-width-small: 80vw;
-    --window-height: 80vh;
+    --window-height: 60vh;
 }
 
 
@@ -11,6 +11,7 @@
     width: var(--window-width);
     margin-left: auto;
     margin-right: auto;
+    margin-top: 8vh;
     border-radius: 20px;
     box-shadow: var(--header-shadow);
 }
