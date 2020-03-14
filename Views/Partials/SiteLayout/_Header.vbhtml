@@ -38,6 +38,7 @@
                 @Html.Raw(Tag) End If
         Next
         @Html.Raw(String.Format("<li class=""nbar-item"" role=""presentation""><a class=""nbar-link{1}"" href=""{0}"" Target=""{2}"">{3}</a></li>", "http://angular.worksync.net", "", "_blank", "Angular"))
+        @Html.Raw(String.Format("<li class=""nbar-item"" role=""presentation""><a class=""nbar-link{1}"" href=""{0}"" Target=""{2}"">{3}</a></li>", "http://api.worksync.net", "", "_blank", "API"))
         @Html.Raw(String.Format("<li class=""nbar-item"" role=""presentation""><a class=""nbar-link{1}"" href=""{0}"" Target=""{2}"">{3}</a></li>", "/Umbraco/", "", "_blank", "Login"))
     End If
 
